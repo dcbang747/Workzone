@@ -1,0 +1,117 @@
+﻿@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 60
+
+# Must be synced between files with the values located at "# Provisions Costs #".
+@provisions_cost_infantry_cheap = 3
+@provisions_cost_infantry_moderate = 7
+@provisions_cost_infantry_expensive = 12
+@provisions_cost_infantry_bankrupting = 15
+
+@provisions_cost_cavalry_cheap = 7
+@provisions_cost_cavalry_moderate = 15
+@provisions_cost_cavalry_expensive = 21
+@provisions_cost_cavalry_bankrupting = 30
+
+@provisions_cost_special_cheap = 6
+@provisions_cost_special_moderate = 12
+@provisions_cost_special_expensive = 18
+@provisions_cost_special_bankrupting = 24
+
+wardens_of_the_council = {
+	type = heavy_infantry
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { always = no }
+	buy_cost = { gold = 410 }
+	low_maintenance_cost = { gold = 0.25 }
+	high_maintenance_cost = { gold = 0.75 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	damage = 360
+	toughness = 250
+	pursuit = 15
+	screen = 30
+	
+	terrain_bonus = {
+	}
+	
+	counters = {
+		pikemen = 1
+		monster = 1
+		heavy_cavalry = 1
+	}
+
+	stack = 25
+	icon = council_wardens
+}
+
+northron_mearas = {
+	type = heavy_cavalry
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { always = no }
+	damage = 120
+	toughness = 45
+	pursuit = 20
+	screen = 5
+	terrain_bonus = {
+		plains = { damage = 40 }
+		hills = { damage = -10 }
+		mountains = { damage = -50 }
+		desert_mountains = { damage = -50 }
+		
+		jungle = { damage = -25 }
+		wetlands = { damage = -90 toughness = -15 pursuit = -20 }
+		halls = { damage = -90 toughness = -15 pursuit = -20 }
+	}
+	counters = {
+		skirmishers = 1
+		archers = 1
+		heavy_infantry = 1
+	}
+	winter_bonus = {
+		normal_winter = { toughness = -5 pursuit = -5 }
+		harsh_winter = { toughness = -10 pursuit = -10 screen = -5 }
+	}
+	buy_cost = { gold = 300 }
+	low_maintenance_cost = { gold = 0.85 }
+	high_maintenance_cost = { gold = 2.55 }
+	provision_cost = @provisions_cost_cavalry_expensive
+
+	stack = 50
+	icon = heavy_cavalry
+}
+
+dweller_in_the_dark = { # given by events.
+	type = monster
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { always = no }
+	buy_cost = { gold = 400 }
+	low_maintenance_cost = { gold = 0.8 }
+	high_maintenance_cost = { gold = 2.4 }
+	provision_cost = @provisions_cost_cavalry_bankrupting
+	
+	damage = 500
+	toughness = 1200
+	pursuit = 0
+	screen = 0
+	
+	counters = {
+		skirmishers = 1
+		camel_cavalry = 1
+		elephant_cavalry = 1
+		heavy_infantry = 1
+	}
+	terrain_bonus = {
+	}
+	winter_bonus = {
+		normal_winter = { damage = -100 toughness = -20 }
+		harsh_winter = { damage = -300 toughness = -50 }
+	}
+
+	stack = 5
+	icon = troll
+}
+
+
+

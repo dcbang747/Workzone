@@ -1,0 +1,1863 @@
+﻿@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+# Must be synced between files with the values located at "# Provisions Costs #".
+@provisions_cost_infantry_cheap = 3
+@provisions_cost_infantry_moderate = 7
+@provisions_cost_infantry_expensive = 12
+@provisions_cost_infantry_bankrupting = 15
+
+@provisions_cost_cavalry_cheap = 7
+@provisions_cost_cavalry_moderate = 15
+@provisions_cost_cavalry_expensive = 21
+@provisions_cost_cavalry_bankrupting = 30
+
+@provisions_cost_special_cheap = 6
+@provisions_cost_special_moderate = 12
+@provisions_cost_special_expensive = 18
+@provisions_cost_special_bankrupting = 24
+
+##################
+### Longbeards ###
+##################
+
+longbeard_skirmishers = { #Craban azgîth/Raven Eyes
+	type = skirmishers
+
+	buy_cost = { gold = 110 }
+	low_maintenance_cost = { gold = 0.37 }
+	high_maintenance_cost = { gold = 1.1 }
+	provision_cost = @provisions_cost_infantry_moderate
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { 
+		OR = {
+			culture = { has_innovation = innovation_longbeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_longbeard_warfare }
+			}
+		}
+	}
+
+	stack = 80
+	damage = 24
+	toughness = 52
+	pursuit = 15
+	screen = 15
+
+	counters = {
+		heavy_infantry = 1
+		monster = 1
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 11 toughness = 24 pursuit = 4 screen = 4 }
+		desert_mountains = { damage = 11 toughness = 24 pursuit = 4 screen = 4 }
+		hills = { damage = 11 toughness = 24 pursuit = 4 screen = 4 }
+		red_desert = { damage = 11 toughness = 24 pursuit = 4 screen = 4 }
+		halls = { damage = 16 toughness = 34 pursuit = 5 screen = 5 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = longbeard_skirmishers
+}
+
+longbeard_pikemen = { #klethuhûr (steel forest)
+	type = pikemen
+
+	buy_cost = { gold = 187 }
+	low_maintenance_cost = { gold = 0.75 }
+	high_maintenance_cost = { gold = 2.24 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_longbeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_longbeard_warfare }
+			}
+		}
+	}
+
+	stack = 80
+	damage = 32
+	toughness = 72
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		archers = 0.5
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 21 toughness = 47 screen = 5 }
+		desert_mountains = { damage = 21 toughness = 47 screen = 5 }
+		hills = { damage = 10 toughness = 22 screen = 3 }
+		red_desert = { damage = 10 toughness = 22 screen = 3 }
+		halls = { damage = 21 toughness = 47 screen = 5 }
+	}
+
+	winter_bonus = {
+	}
+	
+ 	ai_quality = {
+		value = culture_ai_weight_pikemen
+		add = counter_synergy_ai_weight_pikemen
+	}
+	icon = longbeard_pikemen
+	allowed_in_hired_troops = no
+}
+
+longbeard_crossbowmen = { #zirin shathur
+	type = archers
+	
+	buy_cost = { gold = 148 }
+	low_maintenance_cost = { gold = 0.54 }
+	high_maintenance_cost = { gold = 1.61 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_longbeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_longbeard_warfare }
+			}
+		}
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 24 toughness = 16 screen = 3 }
+		desert_mountains = { damage = 24 toughness = 16 screen = 3 }
+		hills = { damage = 16 toughness = 11 screen = 2 }
+		red_desert = { damage = 16 toughness = 11 screen = 2 }
+		forest = { damage = 16 toughness = 11 screen = 2 }
+		halls = { damage = 34 toughness = 23 screen = 4 }
+	}
+
+	counters = {
+		pikemen = 1
+		heavy_infantry = 1
+		archer_cavalry = 0.5
+	}
+
+	stack = 80
+	damage = 52
+	toughness = 35
+	pursuit = 0
+	screen = 10
+
+	allowed_in_hired_troops = no
+	ai_quality = { 
+		value = culture_ai_weight_archers
+		add = counter_synergy_ai_weight_archers
+	}
+	icon = longbeard_crossbowmen
+}
+
+longbeard_heavy_infantry = { #sigin baruk
+	type = heavy_infantry
+
+	buy_cost = { gold = 202 }
+	low_maintenance_cost = { gold = 0.9 }
+	high_maintenance_cost = { gold = 2.69 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_longbeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_longbeard_warfare }
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+
+	stack = 80
+	damage = 48
+	toughness = 60
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		pikemen = 1
+		skirmishers = 1
+		archers = 0.5
+		peasant_militia = 2
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 22 toughness = 27 screen = 4 }
+		desert_mountains = { damage = 22 toughness = 27 screen = 4 }
+		hills = { damage = 15 toughness = 18 screen = 3 }
+		red_desert = { damage = 15 toughness = 18 screen = 3 }
+		halls = { damage = 32 toughness = 39 screen = 5 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = {
+		value = culture_ai_weight_heavy_infantry
+		add = counter_synergy_ai_weight_heavy_infantry
+	}
+	icon = longbeard_heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+longbeard_cavalry = { #setfôn thârag
+	type = heavy_cavalry
+	
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		is_dwarf = yes
+		OR = {
+			any_vassal_or_below = {
+				any_held_county = {
+					any_county_province = {
+						OR = {
+							has_building_or_higher = goat_pastures_01
+						}
+					}
+				}
+			}
+			AND = {
+				culture = {
+					has_innovation = innovation_iron_hills_goat_domestication
+				}
+				any_held_county = {
+					any_county_province = {
+						OR = {
+							has_building_or_higher = goat_pastures_01
+						}
+					}
+				}
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+
+	buy_cost = { gold = 236 }
+	low_maintenance_cost = { gold = 0.82 }
+	high_maintenance_cost = { gold = 2.47 }
+	provision_cost = @provisions_cost_cavalry_expensive
+
+	stack = 40
+	damage = 140
+	toughness = 88
+	pursuit = 20
+	screen = 33
+
+	counters = {
+		archers = 1
+		skirmishers = 1
+	}	
+
+	terrain_bonus = {
+		mountains = { damage = 22 toughness = 27 screen = 4 }
+		desert_mountains = { damage = 22 toughness = 27 screen = 4 }
+		hills = { damage = 15 toughness = 18 screen = 3 }
+		red_desert = { damage = 15 toughness = 18 screen = 3 }
+		halls = { damage = 32 toughness = 39 screen = 5 }
+	}
+
+	winter_bonus = {
+		normal_winter = { toughness = -10 damage = -30 }
+		harsh_winter = { toughness = -20 damage = -60 }
+	}
+
+	allowed_in_hired_troops = no
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = longbeard_cavalry
+}
+
+longbeard_horse_archers = {	#higêm thinbîn
+	type = archer_cavalry
+
+	buy_cost = { gold = 187 }
+	low_maintenance_cost = { gold = 0.62 }
+	high_maintenance_cost = { gold = 1.87 }
+	provision_cost = @provisions_cost_cavalry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_longbeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_longbeard_warfare }
+			}
+		}
+	}
+
+	stack = 40
+	damage = 128
+	toughness = 64
+	pursuit = 50
+	screen = 100
+
+	counters = {
+		skirmishers = 1
+		monster = 1
+		heavy_infantry = 1
+		pikemen = 1
+	}
+
+	terrain_bonus = {
+		mountains = { damage = 67 toughness = 29 pursuit = 12 screen = 23 }
+		desert_mountains = { damage = 67 toughness = 29 pursuit = 12 screen = 23 }
+		hills = { damage = 45 toughness = 20 pursuit = 8 screen = 15 }
+		red_desert = { damage = 45 toughness = 20 pursuit = 8 screen = 15 }
+		halls = { damage = 97 toughness = 42 pursuit = 17 screen = 33 }
+	}
+
+	winter_bonus = {
+		normal_winter = { toughness = -2 damage = -5 }
+		harsh_winter = { toughness = -4 damage = -10 }
+	}
+	
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = longbeard_horse_archers
+}
+
+##################
+### firebeards ###
+##################
+
+firebeard_skirmishers = { #Shumzrâkâz/flame wardens
+	type = skirmishers
+
+	buy_cost = { gold = 110 }
+	low_maintenance_cost = { gold = 0.37 }
+	high_maintenance_cost = { gold = 1.1 }
+	provision_cost = @provisions_cost_infantry_moderate
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { 
+		OR = {
+			culture = { has_innovation = innovation_firebeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_firebeard_warfare }
+			}
+		}
+	}
+
+	stack = 80
+	damage = 26
+	toughness = 48
+	pursuit = 15
+	screen = 15
+
+	counters = {
+		heavy_infantry = 1
+		monster = 1
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 12 toughness = 22 pursuit = 4 screen = 4 }
+		desert_mountains = { damage = 12 toughness = 22 pursuit = 4 screen = 4 }
+		hills = { damage = 12 toughness = 22 pursuit = 4 screen = 4 }
+		red_desert = { damage = 12 toughness = 22 pursuit = 4 screen = 4 }
+		halls = { damage = 17 toughness = 32 pursuit = 5 screen = 5 }
+	}
+	
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = firebeard_skirmishers
+}
+
+firebeard_archers = { #Hurzu Tumnu/rangers of the vale
+	type = archers
+	
+	buy_cost = { gold = 162 }
+	low_maintenance_cost = { gold = 0.55 }
+	high_maintenance_cost = { gold = 1.65 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_firebeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_firebeard_warfare }
+			}
+		}
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 35 toughness = 13 pursuit = 6 screen = 3 }
+		desert_mountains = { damage = 35 toughness = 13 pursuit = 6 screen = 3 }
+		hills = { damage = 23 toughness = 9 pursuit = 4 screen = 2 }
+		red_desert = { damage = 23 toughness = 9 pursuit = 4 screen = 2 }
+		forest = { damage = 23 toughness = 9 pursuit = 4 screen = 2 }
+		halls = { damage = 50 toughness = 19 pursuit = 9 screen = 4 }
+	}
+
+	counters = {
+		heavy_infantry = 1.25
+		heavy_cavalry = 1.25
+		archer_cavalry = 1
+	}
+
+	stack = 80
+	damage = 76
+	toughness = 28
+	pursuit = 0
+	screen = 10
+
+	allowed_in_hired_troops = no
+	ai_quality = { 
+		value = culture_ai_weight_archers
+		add = counter_synergy_ai_weight_archers
+	}
+	icon = firebeard_archers
+}
+
+firebeard_heavy_infantry = { #Beblêl ishmirî
+	type = heavy_infantry
+
+	buy_cost = { gold = 202 }
+	low_maintenance_cost = { gold = 0.9 }
+	high_maintenance_cost = { gold = 2.69 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_firebeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_firebeard_warfare }
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+
+	stack = 80
+	damage = 42
+	toughness = 70
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		pikemen = 1
+		skirmishers = 1
+		archers = 0.5
+		peasant_militia = 2
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 19 toughness = 32 screen = 4 }
+		desert_mountains = { damage = 19 toughness = 32 screen = 4 }
+		hills = { damage = 13 toughness = 21 screen = 3 }
+		red_desert = { damage = 13 toughness = 21 screen = 3 }
+		halls = { damage = 28 toughness = 46 screen = 5 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = {
+		value = culture_ai_weight_heavy_infantry
+		add = counter_synergy_ai_weight_heavy_infantry
+	}
+	icon = firebeard_heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+firebeard_pikemen = { #klethuhûr (steel forest)
+	type = pikemen
+
+	buy_cost = { gold = 187 }
+	low_maintenance_cost = { gold = 0.75 }
+	high_maintenance_cost = { gold = 2.24 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_firebeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_firebeard_warfare }
+			}
+		}
+	}
+
+	stack = 80
+	damage = 34
+	toughness = 60
+	pursuit = 0
+	screen = 10
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		archers = 0.5
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 23 toughness = 39 screen = 4 }
+		desert_mountains = { damage = 23 toughness = 39 screen = 4 }
+		hills = { damage = 11 toughness = 18 screen = 2 }
+		red_desert = { damage = 11 toughness = 18 screen = 2 }
+		halls = { damage = 23 toughness = 39 screen = 4 }
+	}
+	
+ 	ai_quality = {
+		value = culture_ai_weight_pikemen
+		add = counter_synergy_ai_weight_pikemen
+	}
+	icon = firebeard_pikemen
+	allowed_in_hired_troops = no
+}
+
+##################
+### Broadbeams ###
+##################
+
+broadbeam_skirmishers = { #Shumzrâkâz/flame wardens
+	type = skirmishers
+
+	buy_cost = { gold = 110 }
+	low_maintenance_cost = { gold = 0.37 }
+	high_maintenance_cost = { gold = 1.1 }
+	provision_cost = @provisions_cost_infantry_moderate
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_broadbeam_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_broadbeam_warfare }
+			}
+		}
+	}
+
+	stack = 80
+	damage = 22
+	toughness = 54
+	pursuit = 15
+	screen = 15
+
+	counters = {
+		heavy_infantry = 1
+		monster = 1
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 10 toughness = 25 pursuit = 4 screen = 4 }
+		desert_mountains = { damage = 10 toughness = 25 pursuit = 4 screen = 4 }
+		hills = { damage = 10 toughness = 25 pursuit = 4 screen = 4 }
+		red_desert = { damage = 10 toughness = 25 pursuit = 4 screen = 4 }
+		halls = { damage = 15 toughness = 36 pursuit = 5 screen = 5 }
+	}
+	winter_bonus = {
+		normal_winter = { damage = 4 toughness = 9 pursuit = 2 screen = 2 }
+		harsh_winter = { damage = 4 toughness = 9 pursuit = 2 screen = 2 }
+	}
+	
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = broadbeam_skirmishers
+}
+
+broadbeam_crossbowmen = { #zirin shathur
+	type = archers
+	
+	buy_cost = { gold = 148 }
+	low_maintenance_cost = { gold = 0.54 }
+	high_maintenance_cost = { gold = 1.61 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_broadbeam_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_broadbeam_warfare }
+			}
+		}
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 24 toughness = 17 screen = 3 }
+		desert_mountains = { damage = 24 toughness = 17 screen = 3 }
+		hills = { damage = 16 toughness = 11 screen = 2 }
+		red_desert = { damage = 16 toughness = 11 screen = 2 }
+		taiga = { damage = 16 toughness = 11 screen = 2 }
+		forest = { damage = 16 toughness = 11 screen = 2 }
+		halls = { damage = 34 toughness = 24 screen = 4 }
+	}
+	winter_bonus = {
+		normal_winter = { damage = 8 toughness = 6 screen = 1 }
+		harsh_winter = { damage = 8 toughness = 6 screen = 1 }
+	}
+
+	counters = {
+		heavy_infantry = 1
+		pikemen = 1
+		archer_cavalry = 0.5
+	}
+
+	stack = 80
+	damage = 52
+	toughness = 36
+	pursuit = 0
+	screen = 10
+
+	allowed_in_hired_troops = no
+	ai_quality = { 
+		value = culture_ai_weight_archers
+		add = counter_synergy_ai_weight_archers
+	}
+	icon = broadbeam_crossbowmen
+}
+
+broadbeam_heavy_infantry = { #Beblêl ishmirî
+	type = heavy_infantry
+
+	buy_cost = { gold = 218 }
+	low_maintenance_cost = { gold = 0.97 }
+	high_maintenance_cost = { gold = 2.9 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_broadbeam_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_broadbeam_warfare }
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+
+	stack = 80
+	damage = 42
+	toughness = 76
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		pikemen = 1
+		heavy_infantry = 1
+		archers = 1
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 19 toughness = 35 screen = 4 }
+		desert_mountains = { damage = 19 toughness = 35 screen = 4 }
+		hills = { damage = 13 toughness = 23 screen = 3 }
+		red_desert = { damage = 13 toughness = 23 screen = 3 }
+		halls = { damage = 28 toughness = 50 screen = 5 }
+	}
+	winter_bonus = {
+		normal_winter = { damage = 7 toughness = 12 screen = 2 }
+		harsh_winter = { damage = 7 toughness = 12 screen = 2 }
+	}
+	
+	ai_quality = {
+		value = culture_ai_weight_heavy_infantry
+		add = counter_synergy_ai_weight_heavy_infantry
+	}
+	icon = broadbeam_heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+broadbeam_pikemen = { #klethuhûr (steel forest)
+	type = pikemen
+
+	buy_cost = { gold = 187 }
+	low_maintenance_cost = { gold = 0.75 }
+	high_maintenance_cost = { gold = 2.24 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_broadbeam_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_broadbeam_warfare }
+			}
+		}
+	}
+
+	stack = 80
+	damage = 30
+	toughness = 68
+	pursuit = 0
+	screen = 10
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		archers = 0.5
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 20 toughness = 45 screen = 4 }
+		desert_mountains = { damage = 20 toughness = 45 screen = 4 }
+		hills = { damage = 9 toughness = 21 screen = 2 }
+		red_desert = { damage = 9 toughness = 21 screen = 2 }
+		halls = { damage = 20 toughness = 45 screen = 4 }
+	}
+	winter_bonus = {
+		normal_winter = { damage = 5 toughness = 11 screen = 1 }
+		harsh_winter = { damage = 5 toughness = 11 screen = 1 }
+	}
+	
+ 	ai_quality = {
+		value = culture_ai_weight_pikemen
+		add = counter_synergy_ai_weight_pikemen
+	}
+	icon = broadbeam_pikemen
+	allowed_in_hired_troops = no
+}
+
+###################
+#### Ironfists ####
+###################
+
+ironfist_skirmishers = { #
+	type = skirmishers
+
+	buy_cost = { gold = 135 }
+	low_maintenance_cost = { gold = 0.45 }
+	high_maintenance_cost = { gold = 1.35 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { 
+		OR = {
+			culture = { has_innovation = innovation_ironfist_warfare }
+			AND = {
+				culture = { has_innovation = innovation_ironfist_warfare }
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				#has_perk = planned_cultivation_perk # re-enable later
+				#location.culture ?= { has_innovation = innovation_ironfist_warfare } # re-enable later
+			}
+		}
+	}
+
+
+	stack = 80
+	damage = 60
+	toughness = 40
+	pursuit = 30
+	screen = 30
+
+	counters = {
+		heavy_infantry = 1
+		monster = 1
+		archer_cavalry = 1.5
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 27 toughness = 18 pursuit = 7 screen = 7 }
+		desert_mountains = { damage = 27 toughness = 18 pursuit = 7 screen = 7 }
+		hills = { damage = 39 toughness = 26 pursuit = 10 screen = 10 }
+		red_desert = { damage = 39 toughness = 26 pursuit = 10 screen = 10 }
+		halls = { damage = 39 toughness = 26 pursuit = 10 screen = 10 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = ironfist_skirmishers
+}
+
+ironfist_crossbowmen = { #
+	type = archers
+	
+	buy_cost = { gold = 133 }
+	low_maintenance_cost = { gold = 0.48 }
+	high_maintenance_cost = { gold = 1.45 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_ironfist_warfare }
+			AND = {
+				culture = { has_innovation = innovation_ironfist_warfare }
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				#has_perk = planned_cultivation_perk # re-enable later
+				#location.culture ?= { has_innovation = innovation_ironfist_warfare } # re-enable later
+			}
+		}
+	}
+
+	
+	terrain_bonus = {
+		mountains = { damage = 27 toughness = 15 screen = 3 }
+		desert_mountains = { damage = 27 toughness = 15 screen = 3 }
+		hills = { damage = 18 toughness = 10 screen = 2 }
+		red_desert = { damage = 18 toughness = 10 screen = 2 }
+		forest = { damage = 18 toughness = 10 screen = 2 }
+		halls = { damage = 38 toughness = 21 screen = 4 }
+	}
+
+	counters = {
+		heavy_infantry = 1
+		pikemen = 1
+		archer_cavalry = 1
+	}
+
+	stack = 80
+	damage = 58
+	toughness = 32
+	pursuit = 0
+	screen = 10
+
+	allowed_in_hired_troops = no
+	ai_quality = { 
+		value = culture_ai_weight_archers
+		add = counter_synergy_ai_weight_archers
+	}
+	icon = ironfist_crossbowmen
+}
+
+ironfist_heavy_infantry = { #
+	type = heavy_infantry
+
+	buy_cost = { gold = 182 }
+	low_maintenance_cost = { gold = 0.9 }
+	high_maintenance_cost = { gold = 2.69 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_ironfist_warfare }
+			AND = {
+				culture = { has_innovation = innovation_ironfist_warfare }
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				#has_perk = planned_cultivation_perk # re-enable later
+				#location.culture ?= { has_innovation = innovation_ironfist_warfare } # re-enable later
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+
+
+	stack = 80
+	damage = 46
+	toughness = 62
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		pikemen = 1
+		skirmishers = 1
+		archers = 0.5
+		peasant_militia = 2
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 21 toughness = 28 screen = 4 }
+		desert_mountains = { damage = 21 toughness = 28 screen = 4 }
+		hills = { damage = 14 toughness = 19 screen = 3 }
+		red_desert = { damage = 14 toughness = 19 screen = 3 }
+		halls = { damage = 30 toughness = 41 screen = 5 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = {
+		value = culture_ai_weight_heavy_infantry
+		add = counter_synergy_ai_weight_heavy_infantry
+	}
+	icon = ironfist_heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+ironfist_pikemen = { #
+	type = pikemen
+
+	buy_cost = { gold = 160 }
+	low_maintenance_cost = { gold = 0.62 }
+	high_maintenance_cost = { gold = 1.92 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_ironfist_warfare }
+			AND = {
+				culture = { has_innovation = innovation_ironfist_warfare }
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				#has_perk = planned_cultivation_perk # re-enable later
+				#location.culture ?= { has_innovation = innovation_ironfist_warfare } # re-enable later
+			}
+		}
+	}
+
+	stack = 80
+	damage = 36
+	toughness = 58
+	pursuit = 0
+	screen = 10
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		archers = 0.5
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 24 toughness = 38 screen = 4 }
+		desert_mountains = { damage = 24 toughness = 38 screen = 4 }
+		hills = { damage = 11 toughness = 18 screen = 2 }
+		red_desert = { damage = 11 toughness = 18 screen = 2 }
+		halls = { damage = 24 toughness = 38 screen = 4 }
+	}
+
+ 	ai_quality = {
+		value = culture_ai_weight_pikemen
+		add = counter_synergy_ai_weight_pikemen
+	}
+	icon = ironfist_pikemen
+	allowed_in_hired_troops = no
+}
+
+###################
+### Stiffbeards ###
+###################
+
+stiffbeard_skirmishers = { #Shumzrâkâz/flame wardens
+	type = skirmishers
+
+	buy_cost = { gold = 110 }
+	low_maintenance_cost = { gold = 0.37 }
+	high_maintenance_cost = { gold = 1.1 }
+	provision_cost = @provisions_cost_infantry_moderate
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { 
+		OR = {
+			culture = { has_innovation = innovation_stiffbeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_stiffbeard_warfare }
+			}
+		}
+	}
+
+
+	stack = 80
+	damage = 20
+	toughness = 56
+	pursuit = 15
+	screen = 15
+
+	counters = {
+		heavy_infantry = 1
+		monster = 1
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 9 toughness = 26 pursuit = 4 screen = 4 }
+		desert_mountains = { damage = 9 toughness = 26 pursuit = 4 screen = 4 }
+		hills = { damage = 9 toughness = 26 pursuit = 4 screen = 4 }
+		red_desert = { damage = 9 toughness = 26 pursuit = 4 screen = 4 }
+		halls = { damage = 13 toughness = 37 pursuit = 5 screen = 5 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = stiffbeard_skirmishers
+}
+
+stiffbeard_crossbowmen = { #zirin shathur
+	type = archers
+	
+	buy_cost = { gold = 148 }
+	low_maintenance_cost = { gold = 0.54 }
+	high_maintenance_cost = { gold = 1.61 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_stiffbeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_stiffbeard_warfare }
+			}
+		}
+	}
+
+	
+	terrain_bonus = {
+		mountains = { damage = 22 toughness = 18 screen = 4 }
+		desert_mountains = { damage = 22 toughness = 18 screen = 4 }
+		hills = { damage = 15 toughness = 12 screen = 3 }
+		red_desert = { damage = 15 toughness = 12 screen = 3 }
+		forest = { damage = 15 toughness = 12 screen = 3 }
+		halls = { damage = 32 toughness = 25 screen = 5 }
+	}
+
+	counters = {
+		heavy_infantry = 1
+		pikemen = 1
+		archer_cavalry = 0.5
+	}
+
+	stack = 80
+	damage = 48
+	toughness = 38
+	pursuit = 0
+	screen = 10
+
+	allowed_in_hired_troops = no
+	ai_quality = { 
+		value = culture_ai_weight_archers
+		add = counter_synergy_ai_weight_archers
+	}
+	icon = stiffbeard_crossbowmen
+}
+
+stiffbeard_heavy_infantry = { #Beblêl ishmirî
+	type = heavy_infantry
+
+	buy_cost = { gold = 202 }
+	low_maintenance_cost = { gold = 0.9 }
+	high_maintenance_cost = { gold = 2.69 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_stiffbeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_stiffbeard_warfare }
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+
+
+	stack = 80
+	damage = 36
+	toughness = 66
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		pikemen = 1
+		skirmishers = 1
+		archers = 0.5
+		peasant_militia = 2
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 17 toughness = 30 screen = 4 }
+		desert_mountains = { damage = 17 toughness = 30 screen = 4 }
+		hills = { damage = 11 toughness = 20 screen = 3 }
+		red_desert = { damage = 11 toughness = 20 screen = 3 }
+		halls = { damage = 24 toughness = 43 screen = 5 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = {
+		value = culture_ai_weight_heavy_infantry
+		add = counter_synergy_ai_weight_heavy_infantry
+	}
+	icon = stiffbeard_heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+stiffbeard_pikemen = { #klethuhûr (steel forest)
+	type = pikemen
+
+	buy_cost = { gold = 212 }
+	low_maintenance_cost = { gold = 0.85 }
+	high_maintenance_cost = { gold = 2.54 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_stiffbeard_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_stiffbeard_warfare }
+			}
+		}
+	}
+
+	stack = 80
+	damage = 38
+	toughness = 76
+	pursuit = 0
+	screen = 20
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		elephant_cavalry = 1
+		monster = 1
+		archers = 0.5
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 25 toughness = 50 screen = 7 }
+		desert_mountains = { damage = 25 toughness = 50 screen = 7 }
+		hills = { damage = 12 toughness = 23 screen = 3 }
+		red_desert = { damage = 12 toughness = 23 screen = 3 }
+		halls = { damage = 25 toughness = 50 screen = 7 }
+	}
+	
+ 	ai_quality = {
+		value = culture_ai_weight_pikemen
+		add = counter_synergy_ai_weight_pikemen
+	}
+	icon = stiffbeard_pikemen
+	allowed_in_hired_troops = no
+}
+
+##################
+### Blacklocks ###
+##################
+
+blacklock_skirmishers = { #Shumzrâkâz/flame wardens
+	type = skirmishers
+
+	buy_cost = { gold = 110 }
+	low_maintenance_cost = { gold = 0.37 }
+	high_maintenance_cost = { gold = 1.1 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { 
+		OR = {
+			culture = { has_innovation = innovation_blacklock_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_blacklock_warfare }
+			}
+		}
+	}
+
+	stack = 80
+	damage = 32
+	toughness = 45
+	pursuit = 15
+	screen = 15
+
+	counters = {
+		heavy_infantry = 1
+		monster = 1
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 15 toughness = 21 pursuit = 4 screen = 4 }
+		desert_mountains = { damage = 15 toughness = 21 pursuit = 4 screen = 4 }
+		hills = { damage = 10 toughness = 14 pursuit = 3 screen = 3 }
+		red_desert = { damage = 10 toughness = 14 pursuit = 3 screen = 3 }
+		jungle = { damage = 21 toughness = 30 pursuit = 5 screen = 5 }
+		halls = { damage = 21 toughness = 30 pursuit = 5 screen = 5 }
+	}
+
+	winter_bonus = {
+	}
+	
+	allowed_in_hired_troops = yes
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = blacklock_skirmishers
+}
+
+blacklock_crossbowmen = { #zirin shathur
+	type = archers
+	
+	buy_cost = { gold = 148 }
+	low_maintenance_cost = { gold = 0.54 }
+	high_maintenance_cost = { gold = 1.61 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_blacklock_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_blacklock_warfare }
+			}
+		}
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 27 toughness = 14 screen = 3 }
+		desert_mountains = { damage = 27 toughness = 14 screen = 3 }
+		hills = { damage = 18 toughness = 10 screen = 2 }
+		red_desert = { damage = 18 toughness = 10 screen = 2 }
+		jungle = { damage = 27 toughness = 14 screen = 3 }
+		halls = { damage = 39 toughness = 21 screen = 4 }
+	}
+
+	counters = {
+		heavy_infantry = 1
+		pikemen = 1
+		archer_cavalry = 0.75
+	}
+
+	stack = 80
+	damage = 60
+	toughness = 31
+	pursuit = 0
+	screen = 10
+
+	allowed_in_hired_troops = no
+	ai_quality = { 
+		value = culture_ai_weight_archers
+		add = counter_synergy_ai_weight_archers
+	}
+	icon = blacklock_crossbowmen
+}
+
+blacklock_engineers = { #Blacklock siege/ranged hybrid
+	type = archers
+	
+	buy_cost = { gold = 150 }
+	low_maintenance_cost = { gold = 0.51 }
+	high_maintenance_cost = { gold = 1.53 }
+	provision_cost = @provisions_cost_infantry_moderate
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_blacklock_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_blacklock_warfare }
+			}
+		}
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 22 toughness = 13 screen = 3 }
+		desert_mountains = { damage = 22 toughness = 13 screen = 3 }
+		hills = { damage = 15 toughness = 9 screen = 2 }
+		red_desert = { damage = 15 toughness = 9 screen = 2 }
+		jungle = { damage = 15 toughness = 9 screen = 2 }
+		halls = { damage = 32 toughness = 19 screen = 4 }
+	}
+
+	counters = {
+
+	}
+
+	stack = 25
+	damage = 48
+	toughness = 28
+	pursuit = 0
+	screen = 10
+
+	siege_tier = 4
+	siege_value = 1
+
+	allowed_in_hired_troops = yes
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = blacklock_engineers
+}
+
+blacklock_heavy_infantry = { #Beblêl ishmirî
+	type = heavy_infantry
+
+	buy_cost = { gold = 202 }
+	low_maintenance_cost = { gold = 0.9 }
+	high_maintenance_cost = { gold = 2.69 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_blacklock_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_blacklock_warfare }
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+
+	stack = 80
+	damage = 52
+	toughness = 58
+	pursuit = 0
+	screen = 25
+
+	counters = {
+		pikemen = 1
+		skirmishers = 1
+		archers = 0.5
+		peasant_militia = 2
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 24 toughness = 27 screen = 6 }
+		desert_mountains = { damage = 24 toughness = 27 screen = 6 }
+		hills = { damage = 16 toughness = 18 screen = 4 }
+		red_desert = { damage = 16 toughness = 18 screen = 4 }
+		jungle = { damage = 16 toughness = 18 screen = 4 }
+		savanna = { damage = 16 toughness = 18 screen = 4 }
+		halls = { damage = 34 toughness = 38 screen = 9 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = {
+		value = culture_ai_weight_heavy_infantry
+		add = counter_synergy_ai_weight_heavy_infantry
+	}
+	icon = blacklock_heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+blacklock_pikemen = { #klethuhûr (steel forest)
+	type = pikemen
+
+	buy_cost = { gold = 187 }
+	low_maintenance_cost = { gold = 0.75 }
+	high_maintenance_cost = { gold = 2.24 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_blacklock_warfare }
+			AND = {
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				has_perk = planned_cultivation_perk
+				location.culture ?= { has_innovation = innovation_blacklock_warfare }
+			}
+		}
+	}
+
+
+	stack = 80
+	damage = 36
+	toughness = 58
+	pursuit = 0
+	screen = 10
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		elephant_cavalry = 1
+		archers = 0.5
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 24 toughness = 38 screen = 4 }
+		desert_mountains = { damage = 24 toughness = 38 screen = 4 }
+		hills = { damage = 17 toughness = 27 screen = 3 }
+		red_desert = { damage = 17 toughness = 27 screen = 3 }
+		jungle = { damage = 11 toughness = 18 screen = 2 }
+		halls = { damage = 24 toughness = 38 screen = 4 }
+	}
+
+	winter_bonus = {
+	}
+	
+ 	ai_quality = {
+		value = culture_ai_weight_pikemen
+		add = counter_synergy_ai_weight_pikemen
+	}
+	icon = blacklock_pikemen
+	allowed_in_hired_troops = yes
+}
+
+##################
+### Stonefoots ###
+##################
+
+stonefoot_skirmishers = { #
+	type = skirmishers
+
+	buy_cost = { gold = 110 }
+	low_maintenance_cost = { gold = 0.37 }
+	high_maintenance_cost = { gold = 1.1 }
+	provision_cost = @provisions_cost_infantry_moderate
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { 
+		OR = {
+			culture = { has_innovation = innovation_stonefoot_warfare }
+			AND = {
+				culture = { has_innovation = innovation_stonefoot_warfare }
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				#has_perk = planned_cultivation_perk # re-enable later
+				#location.culture ?= { has_innovation = innovation_stonefoot_warfare } # re-enable later
+			}
+		}
+	}
+
+	stack = 80
+	damage = 29
+	toughness = 47
+	pursuit = 15
+	screen = 15
+
+	counters = {
+		heavy_infantry = 1
+		monster = 1
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 14 toughness = 22 pursuit = 4 screen = 4 }
+		desert_mountains = { damage = 14 toughness = 22 pursuit = 4 screen = 4 }
+		hills = { damage = 14 toughness = 22 pursuit = 4 screen = 4 }
+		red_desert = { damage = 14 toughness = 22 pursuit = 4 screen = 4 }
+		halls = { damage = 19 toughness = 31 pursuit = 5 screen = 5 }
+	}
+
+
+	winter_bonus = {
+	}
+	
+	allowed_in_hired_troops = yes
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = stonefoot_skirmishers
+}
+
+stonefoot_crossbowmen = { #
+	type = archers
+	
+	buy_cost = { gold = 148 }
+	low_maintenance_cost = { gold = 0.54 }
+	high_maintenance_cost = { gold = 1.61 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_stonefoot_warfare }
+			AND = {
+				culture = { has_innovation = innovation_stonefoot_warfare }
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				#has_perk = planned_cultivation_perk # re-enable later
+				#location.culture ?= { has_innovation = innovation_stonefoot_warfare } # re-enable later
+			}
+		}
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 24 toughness = 18 screen = 3 }
+		desert_mountains = { damage = 24 toughness = 18 screen = 3 }
+		hills = { damage = 16 toughness = 12 screen = 2 }
+		red_desert = { damage = 16 toughness = 12 screen = 2 }
+		forest = { damage = 16 toughness = 12 screen = 2 }
+		halls = { damage = 34 toughness = 25 screen = 4 }
+	}
+
+	counters = {
+		heavy_infantry = 1
+		pikemen = 1
+		archer_cavalry = 1
+	}
+
+	stack = 80
+	damage = 52
+	toughness = 38
+	pursuit = 0
+	screen = 10
+
+	allowed_in_hired_troops = no
+	ai_quality = { 
+		value = culture_ai_weight_archers
+		add = counter_synergy_ai_weight_archers
+	}
+	icon = stonefoot_crossbowmen
+}
+
+stonefoot_heavy_infantry = { #
+	type = heavy_infantry
+
+	buy_cost = { gold = 232 }
+	low_maintenance_cost = { gold = 1.03 }
+	high_maintenance_cost = { gold = 3.09 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_stonefoot_warfare }
+			AND = {
+				culture = { has_innovation = innovation_stonefoot_warfare }
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				#has_perk = planned_cultivation_perk # re-enable later
+				#location.culture ?= { has_innovation = innovation_stonefoot_warfare } # re-enable later
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+
+	stack = 80
+	damage = 62
+	toughness = 56
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		pikemen = 1.5
+		heavy_infantry = 1.5
+		archers = 0.5
+		peasant_militia = 2
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 28 toughness = 26 screen = 4 }
+		desert_mountains = { damage = 28 toughness = 26 screen = 4 }
+		hills = { damage = 19 toughness = 17 screen = 3 }
+		red_desert = { damage = 19 toughness = 17 screen = 3 }
+		halls = { damage = 41 toughness = 37 screen = 5 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = {
+		value = culture_ai_weight_heavy_infantry
+		add = counter_synergy_ai_weight_heavy_infantry
+	}
+	icon = stonefoot_heavy_infantry
+	allowed_in_hired_troops = no
+}
+
+stonefoot_pikemen = { #
+	type = pikemen
+
+	buy_cost = { gold = 178 }
+	low_maintenance_cost = { gold = 0.71 }
+	high_maintenance_cost = { gold = 2.13 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			culture = { has_innovation = innovation_stonefoot_warfare }
+			AND = {
+				culture = { has_innovation = innovation_stonefoot_warfare }
+				is_dwarf = yes
+				is_landless_adventurer = yes
+				#has_perk = planned_cultivation_perk # re-enable later
+				# location.culture ?= { has_innovation = innovation_stonefoot_warfare } # re-enable later
+			}
+		}
+	}
+
+
+	stack = 80
+	damage = 36
+	toughness = 56
+	pursuit = 0
+	screen = 10
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		monster = 1
+		archers = 0.5
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 24 toughness = 37 screen = 4 }
+		desert_mountains = { damage = 24 toughness = 37 screen = 4 }
+		hills = { damage = 11 toughness = 17 screen = 2 }
+		red_desert = { damage = 11 toughness = 17 screen = 2 }
+		halls = { damage = 24 toughness = 37 screen = 4 }
+	}
+
+	winter_bonus = {
+	}
+	
+ 	ai_quality = {
+		value = culture_ai_weight_pikemen
+		add = counter_synergy_ai_weight_pikemen
+	}
+	icon = stonefoot_pikemen
+	allowed_in_hired_troops = yes
+}
+
+######################
+### Special Troops ###
+######################
+
+undying_of_khazad_dum = { #Nêmahinkhêd
+	type = heavy_infantry
+
+	buy_cost = { gold = 301 }
+	low_maintenance_cost = { gold = 1.34 }
+	high_maintenance_cost = { gold = 4.01 }
+	provision_cost = @provisions_cost_infantry_bankrupting
+
+	stack = 80
+	damage = 56
+	toughness = 112
+	pursuit = 0
+	screen = 25
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		any_directly_owned_province = {
+			has_building_or_higher = wonder_durin_throne_t5
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}	
+
+	counters = {
+		pikemen = 1
+		archers = 0.5
+		peasant_militia = 2
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 37 toughness = 73 screen = 9 }
+		desert_mountains = { damage = 37 toughness = 73 screen = 9 }
+		halls = { damage = 56 toughness = 112 screen = 13 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = undying_of_khazad_dum
+	allowed_in_hired_troops = no
+}
+
+blacklock_mercenaries = {
+	type = heavy_infantry
+
+	buy_cost = { gold = 200 }
+	low_maintenance_cost = { gold = 0.8 }
+	high_maintenance_cost = { gold = 1.6 }
+	provision_cost = @provisions_cost_infantry_expensive
+
+	stack = 80
+	damage = 48
+	toughness = 60
+	pursuit = 0
+	screen = 20
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { always = no }	
+
+	counters = {
+		pikemen = 1
+		heavy_infantry = .5
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = 24 toughness = 27 screen = 6 }
+		desert_mountains = { damage = 24 toughness = 27 screen = 6 }
+		hills = { damage = 16 toughness = 18 screen = 4 }
+		red_desert = { damage = 16 toughness = 18 screen = 4 }
+		jungle = { damage = 16 toughness = 18 screen = 4 }
+		halls = { damage = 34 toughness = 38 screen = 9 }
+	}
+
+	winter_bonus = {}
+	
+	ai_quality = { value = 0 }
+	icon = blacklock_mercenaries
+	allowed_in_hired_troops = no
+}
+
+
+firebeard_monsters = { # flamethrowers/Gazag farâs
+	type = archers
+
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { 
+		any_directly_owned_province = {
+			has_building_or_higher = wonder_nogrod_reborn 
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+	buy_cost = { gold = 450 }
+	low_maintenance_cost = { gold = 1.67 }
+	high_maintenance_cost = { gold = 5 }
+	provision_cost = @provisions_cost_special_bankrupting
+
+	stack = 10
+	damage = 640
+	toughness = 30
+	pursuit = 30
+	screen = 30
+
+	siege_tier = 4
+	siege_value = 1
+
+	counters = {
+		pikemen = 1
+		heavy_infantry = 1
+		elephant_cavalry = 1
+		monster = 1
+	}
+	
+	terrain_bonus = {
+		mountains = { damage = -60 toughness = -60 }
+		plains = { damage = 65 toughness = 65 }
+		farmlands = { damage = 65 toughness = 65 }
+		halls = { damage = -60 toughness = -60 }
+	}
+
+	holding_bonus = {
+		dwarven_holding = { damage = 65 toughness = 65 }
+	}
+
+	winter_bonus = {
+	}
+	
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = firebeard_monsters
+	allowed_in_hired_troops = no
+}
+
+broadbeam_dragonslayers = { #
+	type = heavy_infantry
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = { 
+		any_directly_owned_province = {
+			has_building_or_higher = wonder_belegost_reborn 
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+	buy_cost = { gold = 320 }
+	low_maintenance_cost = { gold = 1.25 }
+	high_maintenance_cost = { gold = 3.76 }
+	provision_cost = @provisions_cost_infantry_bankrupting
+
+	stack = 80
+	damage = 106
+	toughness = 52
+	pursuit = 0
+	screen = 20
+
+	counters = {
+		pikemen = 1
+		archers = 1
+		monster = 2
+	}
+	
+	terrain_bonus = {
+		# mountains = { damage = -60 toughness = -60 }
+		# plains = { damage = 65 toughness = 65 }
+		# farmlands = { damage = 65 toughness = 65 }
+		# halls = { damage = -60 toughness = -60 }
+	}
+	winter_bonus = {
+		normal_winter = { damage = 16 toughness = 8 screen = 2 }
+		harsh_winter = { damage = 16 toughness = 8 screen = 2 }
+	}
+	
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = broadbeam_dragonslayers
+	allowed_in_hired_troops = no
+}

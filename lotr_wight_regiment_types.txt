@@ -1,0 +1,237 @@
+﻿# standard costs
+@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+# Must be synced between files with the values located at "# Provisions Costs #".
+@provisions_cost_infantry_cheap = 3
+@provisions_cost_infantry_moderate = 7
+@provisions_cost_infantry_expensive = 12
+@provisions_cost_infantry_bankrupting = 15
+
+@provisions_cost_cavalry_cheap = 7
+@provisions_cost_cavalry_moderate = 15
+@provisions_cost_cavalry_expensive = 21
+@provisions_cost_cavalry_bankrupting = 30
+
+@provisions_cost_special_cheap = 6
+@provisions_cost_special_moderate = 12
+@provisions_cost_special_expensive = 18
+@provisions_cost_special_bankrupting = 24
+
+unburied_wights = {
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		culture = { has_cultural_pillar = heritage_undead }
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}	
+	type = heavy_infantry
+	buy_cost = { gold = 90 piety = 180 }
+	low_maintenance_cost = { gold = 1 piety = 0.3 }
+	high_maintenance_cost = { gold = 3 piety = 0.9 }
+	provision_cost = 0 #lmao
+	
+	stack = 10
+	damage = 160
+	toughness = 800
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		red_desert = { damage = -160 toughness = -800 }
+		desert = { damage = -160 toughness = -800 }
+		dune_sea = { damage = -1600 toughness = -8000 }
+		mallorn_forest = { damage = -72 toughness = -360 }		
+	}
+	holding_bonus = {
+		elven_holding = { damage = -72 toughness = -360 }
+	}
+
+	
+	counters = {
+		skirmishers = 1
+		pikemen = 1
+		heavy_infantry = 1
+		archers = 1
+		heavy_cavalry = 1.5
+		light_cavalry = 1.5
+		archer_cavalry = 1.5
+		camel_cavalry = 1.5
+		elephant_cavalry = 2
+		peasant_militia = 3
+	}
+
+	allowed_in_hired_troops = no
+	ai_quality = { value = 20 }
+	icon = unburied_wights
+}
+
+blighted_trappers = {
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		culture = { has_cultural_pillar = heritage_undead }
+		has_title = title:c_amon_lanc
+	}	
+	type = archers
+
+	damage = 26
+	toughness = 14
+	pursuit = 10
+	screen = 10
+
+	terrain_bonus = {
+		taiga = { damage = 4 toughness = 3 pursuit = 1 screen = 1 }
+		jungle = { damage = 12 toughness = 7 pursuit = 3 screen = 3 }
+		forest = { damage = 12 toughness = 7 pursuit = 3 screen = 3 }
+		deep_forest = { damage = 26 toughness = 14 pursuit = 5 screen = 5 }
+	}
+
+
+	counters = {
+		skirmishers = 1
+	}
+
+	winter_bonus = {
+	}
+	
+	buy_cost = { gold = 33 piety = 66 }
+	low_maintenance_cost = { gold = 0.22 }
+	high_maintenance_cost = { gold = 0.66 }
+	provision_cost = @provisions_cost_infantry_moderate
+
+
+	allowed_in_hired_troops = no
+	stack = 100
+	ai_quality = { value = 30 }
+	icon = blighted_trappers
+}
+
+giant_spiders = {
+# #juke note:
+#⠀⠀⠀⠀⠀⠀         	⣠⣶⣦⡀⢀⣴⣶⣄⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⡇
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⡿⠁
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⠟⠁⠀
+#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠟⠁⠀⠀⠀
+#⠀⠀⠀⠀⢀⣠⣤⣤⣄⡀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+#⠀⠀⡀⡚⢿⣿⣿⣿⡿⣣⣶⣿⣿⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣇
+#⠀⢰⠇⣿⣷⣬⣛⠿⢱⣿⣿⣿⣿⢟⣭⣶⣶⣾⣿⣷⣦⠀⠀⠀⣀⣴⣿⣿
+#⠀⢸⡇⣿⣿⣿⣿⣿⣶⣶⣮⣭⡅⣾⣿⣿⡟⢿⢿⡝⢿⢰⣿⣿⣿⡿⠛⣿
+#⠀⣨⠅⢿⣿⡅⣊⡉⢙⣛⣛⣻⡅⣇⠈⠋⠀⠀⠀⠁⠀⡀⠈⠉⠉⠉⠀  ⣿
+#⠰⡏⣾⡜⣿⣧⢻⡇⠙⠛⣛⢩⣤⠻⠦⠴⠿⠷⠴⠷⠒⠁⠀⠀⠀⠀⠀⡏
+#   ⠁⠈⢿⠘⣿⡆⢇⠀⠀⠀⠋⠸⠃⢸⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠁
+#⠀⠀⠀⠈⠀⠘⢿⡄⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃
+#⠀⠀⠀⠀⠀⠀⠈⠳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃
+#
+access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		OR = {
+			AND = {
+				culture = { has_cultural_pillar = heritage_undead }
+				has_title = title:c_amon_lanc
+			}
+			AND = {
+				faith = faith:orc_spider_cult
+				title:c_shalamagar.holder = {
+					faith = faith:orc_spider_cult
+				}
+			}
+			has_character_flag = khorahil_has_orcs
+		}
+
+		
+	}	
+	type = monster
+	buy_cost = { gold = 245 prestige = 245 }
+	low_maintenance_cost = { gold = 1.6 }
+	high_maintenance_cost = { gold = 4.9 }
+	provision_cost = @provisions_cost_special_bankrupting
+	
+	stack = 15
+	damage = 475
+	toughness = 150
+	pursuit = 0
+	screen = 50
+	
+	terrain_bonus = {
+		wetlands = { damage = -475 toughness = -150 screen = -25 }
+		plains = { damage = -285 toughness = -90 screen = -15 }
+		floodplains = { damage = -285 toughness = -90 screen = -15 }
+		farmlands = { damage = -285 toughness = -90 screen = -15 }
+		drylands = { damage = -285 toughness = -90 screen = -15 }
+		mountains = { damage = 143 toughness = 45 screen = 8 }
+		desert_mountains = { damage = -285 toughness = -90 screen = -15 }
+		red_desert = { damage = -475 toughness = -150 screen = -25 }
+		desert = { damage = -475 toughness = -150 screen = -25 }
+		dune_sea = { damage = -4750 toughness = -1500 screen = -250 }
+		jungle = { damage = 285 toughness = 90 screen = 15 }
+		forest = { damage = 214 toughness = 68 screen = 12 }
+		deep_forest = { damage = 950 toughness = 300 screen = 50 }
+		halls = { damage = 285 toughness = 90 screen = 15 }
+	}
+
+	
+	counters = {
+		skirmishers = 1
+		heavy_infantry= 1
+		light_cavalry = 1
+	}
+	
+	allowed_in_hired_troops = no
+	ai_quality = { value = culture_ai_weight_giant_spiders }
+	icon = giant_spiders
+}
+
+risen_carrion = {
+	access_through_subject = { lotr_orc_can_recruit_from_subject = no } #For orcs
+	can_recruit = {
+		always = no 
+		# OR = {
+		# 	culture = { has_cultural_parameter = unlock_maa_risen_carrion }
+		# 	# any_directly_owned_province = { has_building_or_higher = "wonder_zekhetz_palace_complex_01" }
+		# }
+	}
+	type = skirmishers
+	buy_cost = {
+		gold = 50
+		piety = 25
+	}
+	low_maintenance_cost = {
+		gold = 0.08
+		piety = 0.02
+	}
+	high_maintenance_cost = {
+		gold = 0.24
+		piety = 0.06
+	}
+	provision_cost = 0
+	
+	stack = 200
+	damage = 20
+	toughness = 2
+	pursuit = 5
+	screen = 0
+	
+	terrain_bonus = {
+		desert = { damage = 5 toughness = 1 }
+		desert_mountains = { damage = 5 toughness = 1 }
+		dune_sea = { damage = 5 toughness = 1 }
+		saltflats = { damage = 5 toughness = 1 }
+		red_desert = { damage = 5 toughness = 1 }
+	}
+
+	winter_bonus = {
+		normal_winter = { toughness = -1 }
+		harsh_winter = { damage = -10 toughness = -1 }
+	}
+	
+	counters = {
+		heavy_infantry = 1
+	}
+
+	allowed_in_hired_troops = no
+	icon = risen_carrion
+}
