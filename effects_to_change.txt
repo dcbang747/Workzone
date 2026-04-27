@@ -12,1618 +12,2566 @@ ep3_pick_random_maa_regiment_effect = {
 			############
 			### LotR ###
 			############
-			#### Humans ####
-			### Hillmen ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_hillmen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:hillmen_pikemen
-				}
-			}
-			#1 = { #Commented out due to the Cataphract Bug.
-			#	trigger = {
-			#		culture = { has_innovation = innovation_hillmen_warfare }
-			#	}
-			#	save_scope_value_as = {
-			#		name = maa_to_create
-			#		value = flag:hillmen_light_cavalry
-			#	}
-			#}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_hillmen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:hillmen_heavy_infantry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_hillmen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:hillmen_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_advanced_hillmen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:hillmen_heavy_infantry_unlock
-				}
-			}
-			### Dunlending ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dunlending_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunlending_huscarl
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dunlending_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunlending_outriders
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dunlending_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunlending_axe_hunters
-				}
-			}
-			### Daen ###
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_greatswords }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:clan_swordsmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_daen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunlending_longbowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_daen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:clan_axemen
-				}
-			}
-			### Lossoth ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_lossoth_hunters }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:lossoth_ski_hunters
-				}
-			}
-			### Angmarrin ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_angmar_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:angmarim_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_angmar_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:angmarim_archers
-				}
-			}
-			### Numenorean ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_numenorean_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:numenorean_soldiers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_numenorean_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:numenorean_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_numenorean_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:numenorean_marines
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_numenorean_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:numenorean_elites
-				}
-			}
-			### Dunedain ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dunedain_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunedain_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dunedain_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunedain_knights
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dunedain_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunedain_soldiers
-				}
-			}
-			### Arnorian ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_arnorian_soldiers }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:arnorian_soldiers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_arnorian_soldiers }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:arnorian_bowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_arnorian_soldiers }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:arnorian_cavalry
-				}
-			}
-			### Gondorian ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_gondorian_soldiers }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:gondorian_footmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_gondorian_soldiers }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:gondorian_bowmen
-				}
-			}
-			### Belfalathric ###
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_belfalathrim_chivalry }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:belfalathric_bowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_belfalathrim_chivalry }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:swan_knights
-				}
-			}
-			### Orodbedhric ###
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_gondor_clans }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:gondorian_clansmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_gondor_clans }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:orodbedhric_bowmen
-				}
-			}
-			### Caledhrim ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_caledhrim_soldiers }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:caledhrim_cavalry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_caledhrim_soldiers }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:caledhrim_footmen
-				}
-			}
-			### Umbaredain ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_umbaredain_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:umbaredain_infantry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_umbaredain_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:umbaredain_spearmen
-				}
-			}
-			### Harondoric ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_harondorim_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:harondorim_rangers
-				}
-			}
-			### Dunedain Ranger ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dunedain_ranger_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunedain_rangers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dunedain_ranger_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunedain_wardens
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dunedain_ranger_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dunedain_outriders
-				}
-			}
-			### Eotheod ###
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_protectors_of_the_deep }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:westfolders
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_eotheod_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:eotheod_light_horsemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_eotheod_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:eotheod_horse_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					OR = {
-						culture = { has_cultural_tradition = tradition_riders_of_the_mark }
-						culture = { has_cultural_tradition = tradition_a_people_reunited }
+				### cultural ###
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_ambason_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ambason_archers
 					}
 				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:riders_of_rohan
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_a_people_reunited }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:eotheod_vanguard
-				}
-			}
-			### Haradrim ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_haradrim_tradition }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:haradrim_raiders
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_haradrim_tradition }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:desert_javelineers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_haradrim_tradition }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:desert_spearmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_haradrim_tradition }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:serpent_guard
-				}
-			}
-			### Tedjin ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_tedjin_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:tedjin_khatajani
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_tedjin_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:tedjin_camel_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_tedjin_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:desert_spearmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_tedjin_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:soriyan_shortbows
-				}
-			}
-			### Ray ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_rayan_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:bozishnarud_battlemasters
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_rayan_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:narudbriyig_hillriders
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_rayan_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:gaian_stalkers
-				}
-			}
-			### Tulwang ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_tulwangi_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:tulwangi_cliffwardens
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_tulwangi_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:tulwangi_junglewalkers
-				}
-			}
-			### An-Balkumagan ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_northern_adunai_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:abrazanim_legion
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_northern_adunai_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:abrazanim_halberdiers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_northern_adunai_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:abrazanim_warbows
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_southern_adunai_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:zagar_an_adunai
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_southern_adunai_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:ephalzagar_an_adunai
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_knights_of_kharadune_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:knights_of_kharadune
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_conscripts_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:indentured_conscripts
-				}
-			}
-			### Druedain ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_druedain_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:druedain_temple_guard
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_druedain_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:druedain_poison_archers
-				}
-			}
-			### Honin ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_honin_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:druedain_oku_tori
-				}
-			}
-			### Beffraen ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_beffraen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:druedain_beffraen_heavy_infantry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_beffraen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:druedain_beffraen_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_beffraen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:druedain_beffraen_pikemen
-				}
-			}
-			### Vale and Woodmen ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_valemen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:vale_nenedain_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_woodmen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:woodmen_huntsmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_woodmen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:woodmen_widulingas
-				}
-			}
-			### Rhun ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_warriors_rhun }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:easterling_kataphrakt
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_warriors_rhun }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:easterling_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_warriors_rhun }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:easterling_swordsmen
-				}
-			}
-			### Mordorrim ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_mordorrim_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:morgul_riders
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_mordorrim_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:mordorrim_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_mordorrim_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:mordorrim_archers
-				}
-			}
-			### Bellakari ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_bellakari_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:bellakarani_phalanx
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_bellakari_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:bellakaze_outriders
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_bellakari_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:bellanarud_auxiliaries
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_bellakari_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:bellakari_crossbowmen
-				}
-			}
-			### Eastern Adunai ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_eastern_adunai_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:azul_an_zagar
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_eastern_adunai_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:ephalnardu
-				}
-			}
-			### Sand Men ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dune_sea_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:hasharin
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dune_sea_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:desert_screamers
-				}
-			}
-			### Mardrukan ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_mardrukan_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:mardrukan_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_mardrukan_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:mardrukan_infantry
-				}
-			}
-			### Corsairs ###
-			1 = { 
-				trigger = {
-					culture = { has_cultural_parameter = unlock_maa_corsair_warriors }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:corsair_warriors
-				}
-			}
-			### Dale ###
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_dale_bow_culture }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dale_bowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_dalemen_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:dale_pikes
-				}
-			}
-			### Variags ###
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_variag_horse_lords }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:variag_horse_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_variag_horse_lords }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:windriders_of_khand
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_variag_horse_lords }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:variag_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_cultural_tradition = tradition_variag_horse_lords }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:variag_axemen
-				}
-			}
-			### Nurniags ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_slavers_nurn }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:nurniag_horse_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_slavers_nurn }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:nurniag_slavedrivers
-				}
-			}
-			#### Dwarves ####
-			### Firebeards
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_firebeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:firebeard_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_firebeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:firebeard_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_firebeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:firebeard_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_firebeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:firebeard_heavy_infantry
-				}
-			}
-			### Broadbeams ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_broadbeam_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:broadbeam_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_broadbeam_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:broadbeam_crossbowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_broadbeam_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:broadbeam_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_broadbeam_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:broadbeam_heavy_infantry
-				}
-			}
-			### Blacklocks ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_blacklock_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:blacklock_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_blacklock_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:blacklock_crossbowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_blacklock_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:blacklock_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_blacklock_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:blacklock_heavy_infantry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_blacklock_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:blacklock_engineers
-				}
-			}
-			### Stiffbeards ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_stiffbeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:stiffbeard_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_stiffbeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:stiffbeard_crossbowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_stiffbeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:stiffbeard_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_stiffbeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:stiffbeard_heavy_infantry
-				}
-			}
-			### Longbeards ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_longbeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:longbeard_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_longbeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:longbeard_crossbowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_longbeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:longbeard_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_longbeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:longbeard_heavy_infantry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_longbeard_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:longbeard_horse_archers
-				}
-			}
-			### Ironfists ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_ironfist_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:ironfist_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_ironfist_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:ironfist_crossbowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_ironfist_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:ironfist_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_ironfist_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:ironfist_heavy_infantry
-				}
-			}
-			### Stonefoots ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_stonefoot_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:stonefoot_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_stonefoot_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:stonefoot_crossbowmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_stonefoot_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:stonefoot_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_stonefoot_warfare }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:stonefoot_heavy_infantry
-				}
-			}
-			#### Elves ####
-			### Calaquendi ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_calaquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:high_elven_heavy_infantry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_calaquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:high_elven_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_calaquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:high_elven_heavy_cavalry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_calaquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:high_elven_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_calaquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:high_elven_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_calaquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:high_elven_light_cavalry
-				}
-			}
-			### Lomiquendi ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_lomiquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:grey_elven_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_lomiquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:grey_elven_heavy_cavalry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_lomiquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:grey_elven_heavy_infantry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_lomiquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:grey_elven_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_lomiquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:grey_elven_light_cavalry
-				}
-			}
-			### Avarin ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_avarin_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:avarin_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_avarin_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:avarin_light_cavalry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_avarin_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:avarin_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_avarin_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:avarin_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_avarin_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:avarin_heavy_infantry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_avarin_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:avarin_heavy_cavalry
-				}
-			}
-			### Noldor ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_noldor_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:noldor_swordsmen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_noldor_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:noldor_cavalry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_calaquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:song_smiths
-				}
-			}
-			### Vanyar ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_vanyar_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:vanyar_pikemen
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_vanyar_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:vanyar_cavalry
-				}
-			}
-			### Teleri ###
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_teleri_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:teleri_light_infantry
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_teleri_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:teleri_archers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_sindar_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:hir_hathol
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_falathrim_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:falathrim_haven_guard
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_marchwardens_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:marchwardens
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_galadhrim_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:galadhrim_warriors
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_galadhrim_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:galadhrim_archers
-				}
-			}
-			
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_lasgalendrim_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:royal_elk_riders
-				}
-			}
-			
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_lasgalendrim_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:theladagnyr
-				}
-			}
-			
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_spirits_pact }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:neldoreth_borderwardens
-				}
-			}
-			
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_spirits_pact }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:nuinevari
-				}
-			}
-			
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_cuind_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:cuind_wanderers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_cuind_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:cuind_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_kinnlai_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:annammon_kin
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_kinnlai_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:kinnlai_skirmishers
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_sirrandrai_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:sirrandrai_riders
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_sirrandrai_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:wardens_of_sirgala
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_laiquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:laiquendi_scouts
-				}
-			}
-			1 = { 
-				trigger = {
-					culture = { has_innovation = innovation_laiquendi_warfare }
-					scope:actor = { is_elf = yes }
-				}
-				save_scope_value_as = {
-					name = maa_to_create
-					value = flag:ossiriand_rangers
-				}
-			}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_ambason_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ambason_royal_guard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_harshandatt_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ancient_charioteers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_angmar_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:angmarim_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_angmar_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:angmarim_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_eastern_adunai_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:azul_an_zagar
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_anarikean_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ballistrai_khy
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_bellakari_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:bellakarani_phalanx
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_bellakari_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:bellakari_crossbowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_bellakari_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:bellakaze_outriders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_bellakari_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:bellanarud_auxiliaries
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_pel_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:blacksteel_phalanx
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_rayan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:bozishnarud_battlemasters
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_bulgan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:bulgan_enforcers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_bulgan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:bulgan_sikentr_honor_guard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_bulgan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:bulgan_stormriders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_sirayni_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:chennacatta_slingers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_parameter = unlock_maa_corsair_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:corsair_warriors
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dalemen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dale_bellwardens
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_dale_bow_culture }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dale_bowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dalemen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dale_pikes
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dune_sea_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:desert_screamers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_donan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:donan_slingers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_beffraen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:druedain_beffraen_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_beffraen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:druedain_beffraen_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_beffraen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:druedain_beffraen_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_honin_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:druedain_oku_tori
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_druedain_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:druedain_poison_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_druedain_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:druedain_temple_guard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_warriors_rhun }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:easterling_kataphrakt
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_warriors_rhun }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:easterling_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_warriors_rhun }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:easterling_swordsmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_eastern_adunai_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ephalnardu
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_rayan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:gaian_stalkers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_ambason_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:gembedi
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_geshani_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:geshani_spears
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_scorpion_domestication }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:giant_scorpions
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dune_sea_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hasharin
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_hathorim_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hathorim_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_hathorim_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hathorim_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_chaialla_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hill_stalkers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_hobbit_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hobbit_bounders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_advanced_hobbit_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hobbit_first_bounders_troop
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_advanced_hobbit_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hobbit_hedgewardens
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_hobbit_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hobbit_hunters
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_hobbit_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hobbit_muster
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_advanced_hobbit_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hobbit_pony_riders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_sederi_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:impali_tribesmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lynerian_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ivory_behemoths
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mag_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ivory_sentinels
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_koronandi_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:koronandi_citizen_guard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lynerian_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:league_halberdiers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_logath_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:logath_horsearchers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lossoth_hunters }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:lossoth_ski_hunters
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_parameter = unlock_maa_mahud_headhunters }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mahud_headhunters
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mardrukan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mardrukan_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mardrukan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mardrukan_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_pel_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:marksmen_of_the_matron
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_adena_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:marshstriders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_adena_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:matriarchs_guard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_breemen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:merchant_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mordorrim_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mordorrim_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mordorrim_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mordorrim_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mordorrim_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:morgul_riders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_parameter = unlock_maa_mubadar_berserkers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mubadar_berserkers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mumakani_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mumakani_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mumakani_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mumakani_spears
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_parameter = unlock_maa_nafarati_marauders }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:nafarati_marauders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_rayan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:narudbriyig_hillriders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_slavers_nurn }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:nurniag_horse_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_slavers_nurn }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:nurniag_slavedrivers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_nurnoth_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:nurnoth_regulars
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_nurnoth_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:nurnoth_reserves
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_sirayni_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:powan_hunters
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lynerian_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:quayside_crossbowmen
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							culture = { has_cultural_tradition = tradition_a_scattered_people }
+							culture = { has_cultural_tradition = tradition_a_people_reforged }
+							culture = { has_cultural_tradition = tradition_the_people_of_the_plains }
+							culture = { has_cultural_tradition = tradition_the_people_of_the_plains_old }
+						}
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:rhovanion_freemen
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							culture = { has_cultural_tradition = tradition_the_people_of_the_plains }
+							culture = { has_cultural_tradition = tradition_the_people_of_the_plains_old }
+						}
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:rhovanion_heavy_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							culture = { has_cultural_tradition = tradition_a_people_reforged }
+							culture = { has_cultural_tradition = tradition_the_people_of_the_plains }
+							culture = { has_cultural_tradition = tradition_the_people_of_the_plains_old }
+						}
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:rhovanion_light_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_pillar = heritage_northron }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:rhovanion_royal_guard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mumakani_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:royal_mumakil
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_shayn_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:shayn_javelineers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_shayn_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:shayn_scouts
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_drel_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:shorewardens
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_chaialla_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:silent_stingers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_tedjin_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:soriyan_shortbows
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_tedjin_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tedjin_camel_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_tedjin_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tedjin_khatajani
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dorwinionrim_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:thorn_guard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_angmar_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:thrall_master
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_drel_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tiderunners
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_khyan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tirandaza
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_khyan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tizaspa
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_khyan_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tizrava
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_anarikean_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tizyarshti
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_tulwangi_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tulwangi_cliffwardens
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_tulwangi_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tulwangi_junglewalkers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_sirayni_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:tyari_tollkeepers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_usakani_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:usakani_ambushers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_variag_horse_lords }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:variag_axemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_variag_horse_lords }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:variag_horse_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_variag_horse_lords }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:variag_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dorwinionrim_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:vineyard_bowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dorwinionrim_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:vintner_court_knights
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_vulmaw_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:vulmaw_venturers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_vulmaw_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:waw_pirates
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_variag_horse_lords }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:windriders_of_khand
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_sederi_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:zeba_outriders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_mag_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:zebaback_slavers
+					}
+				}
+				### dunedain ###
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_arnorian_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:arnorian_bowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_arnorian_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:arnorian_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_arnorian_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:arnorian_soldiers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_belfalathrim_chivalry }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:belfalathric_bowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_caledhrim_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:caledhrim_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_caledhrim_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:caledhrim_footmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunedain_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunedain_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunedain_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunedain_elites
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunedain_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunedain_knights
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunedain_ranger_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunedain_outriders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunedain_ranger_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunedain_rangers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunedain_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunedain_soldiers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunedain_ranger_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunedain_wardens
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_gondorian_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:gondorian_bowmen
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							culture = { has_cultural_tradition = tradition_gondor_clans }
+							culture = { has_innovation = innovation_gondorian_soldiers }
+						}
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:gondorian_clansmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_gondorian_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:gondorian_footmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_gondorian_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:gondorian_marines
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_gondorian_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:guard_of_the_citadel
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_harondorim_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:harondorim_palace_guards
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							culture = { has_innovation = innovation_harondorim_warfare }
+							culture = { has_innovation = innovation_gondorian_soldiers }
+						}
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:harondorim_rangers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_nimrodel_rangers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:nimrodel_rangers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_numenorean_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:numenorean_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_numenorean_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:numenorean_elites
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_numenorean_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:numenorean_marines
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_numenorean_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:numenorean_soldiers
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							culture = { has_cultural_tradition = tradition_gondor_clans }
+							culture = { has_innovation = innovation_gondorian_soldiers }
+						}
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:orodbedhric_bowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_belfalathrim_chivalry }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:swan_knights
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_talon_knights }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:talon_knights
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_umbaredain_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:umbaredain_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_umbaredain_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:umbaredain_spearmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_arnorian_soldiers }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:wardens_of_annuminas
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_belfalathrim_chivalry }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:wardens_tirith_aear
+					}
+				}
+				### dunlending ###
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_daen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:clan_axemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_greatswords }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:clan_swordsmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunlending_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunlending_axe_hunters
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunlending_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunlending_huscarl
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_daen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunlending_longbowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_dunlending_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dunlending_outriders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_hillmen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hillmen_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_advanced_hillmen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hillmen_heavy_infantry_unlock
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_hillmen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hillmen_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_hillmen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hillmen_skirmishers
+					}
+				}
+				### dwarven ###
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_blacklock_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:blacklock_crossbowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_blacklock_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:blacklock_engineers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_blacklock_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:blacklock_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_blacklock_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:blacklock_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_blacklock_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:blacklock_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_broadbeam_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:broadbeam_crossbowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_broadbeam_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:broadbeam_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_broadbeam_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:broadbeam_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_broadbeam_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:broadbeam_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_firebeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:firebeard_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_firebeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:firebeard_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_firebeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:firebeard_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_firebeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:firebeard_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_ironfist_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ironfist_crossbowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_ironfist_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ironfist_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_ironfist_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ironfist_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_ironfist_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ironfist_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_iron_hills_goat_domestication }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:longbeard_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_longbeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:longbeard_crossbowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_longbeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:longbeard_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_longbeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:longbeard_horse_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_longbeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:longbeard_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_longbeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:longbeard_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_stiffbeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:stiffbeard_crossbowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_stiffbeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:stiffbeard_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_stiffbeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:stiffbeard_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_stiffbeard_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:stiffbeard_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_stonefoot_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:stonefoot_crossbowmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_stonefoot_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:stonefoot_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_stonefoot_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:stonefoot_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_stonefoot_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:stonefoot_skirmishers
+					}
+				}
+				### elven ###
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_kinnlai_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:annammon_kin
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_avarin_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:avarin_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_avarin_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:avarin_heavy_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_avarin_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:avarin_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_avarin_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:avarin_light_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_avarin_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:avarin_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_avarin_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:avarin_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_cuind_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:cuind_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_cuind_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:cuind_wanderers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_falathrim_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:falathrim_haven_guard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_galadhrim_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:galadhrim_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_galadhrim_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:galadhrim_warriors
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_armored_lasgalendrim_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:gilded_guard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lasgalendrim_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:greenwood_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lomiquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:grey_elven_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lomiquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:grey_elven_heavy_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lomiquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:grey_elven_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lomiquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:grey_elven_light_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lomiquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:grey_elven_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lomiquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:grey_elven_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_calaquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:high_elven_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_calaquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:high_elven_heavy_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_calaquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:high_elven_heavy_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_calaquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:high_elven_light_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_calaquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:high_elven_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_calaquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:high_elven_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_sindar_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hir_hathol
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_kinnlai_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:kinnlai_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_laiquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:laiquendi_scouts
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_marchwardens_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:marchwardens
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_spirits_pact }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:neldoreth_borderwardens
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_noldor_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:noldor_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_noldor_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:noldor_swordsmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_spirits_pact }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:nuinevari
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_laiquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ossiriand_rangers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lasgalendrim_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:royal_elk_riders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_sirrandrai_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:sirrandrai_riders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_calaquendi_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:song_smiths
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_teleri_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:teleri_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_teleri_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:teleri_light_infantry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_lasgalendrim_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:theladagnyr
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_vanyar_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:vanyar_cavalry
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_vanyar_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:vanyar_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_sirrandrai_warfare }
+						scope:actor = { is_elf = yes }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:wardens_of_sirgala
+					}
+				}
+				### haradrim ###
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_haradrim_tradition }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:desert_javelineers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_haradrim_tradition }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:desert_spearmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_parameter = unlock_maa_guard_of_abrakhan }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:guard_of_abrakhan
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_haradrim_tradition }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:haradrim_raiders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_haradrim_tradition }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:serpent_guard
+					}
+				}
+				### north_and_south_adunaic ###
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_northern_adunai_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:abrazanim_halberdiers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_northern_adunai_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:abrazanim_legion
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_northern_adunai_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:abrazanim_warbows
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_southern_adunai_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:ephalzagar_an_adunai
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_conscripts_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:indentured_conscripts
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_knights_of_kharadune_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:knights_of_kharadune
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_southern_adunai_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:zagar_an_adunai
+					}
+				}
+				### orc ###
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_caragor }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:caragor_pack
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_shadow_arts }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:deeproad_lurkers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_draconic_warriors }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:dragon_orc_berserkers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_yellow_mountain_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:goblin_poison_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_goblin_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:goblin_skirmishers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_yellow_mountain_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:goblin_spear_throwers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_yellow_mountain_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:goblin_underminers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_goblin_warg_riders }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:goblin_warg_riders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_great_beasts }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:great_beasts
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_parameter = unlock_maa_hunter_orcs_on_fell_wargs }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hunter_orcs_on_fell_wargs
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_moria_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:moria_archers
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							culture = { has_innovation = innovation_moria_warfare }
+							culture = { has_innovation = innovation_raiders_of_the_north }
+						}
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mountain_troll
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_uruks }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:mountainorc_warriors
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_raiders_of_the_north }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:net_raiders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_volcanic_metallurgy }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:obsidian_warriors
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_olog_hai }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:olog_hai
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_orc_pits }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:orc_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_orc_pits }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:orc_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_orc_pits }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:orc_rabble
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_orc_pits }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:orc_siege_tower
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_orc_pits }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:orc_trackers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_orc_pits }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:orc_warriors
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_rukhashai_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:rukhashai_raiders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_orc_pits }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:wargrider_scouts
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_wood_trolls }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:wood_trolls
+					}
+				}
+				### rohirrim ###
+				1 = {
+					trigger = {
+						OR = {
+							culture = { has_cultural_tradition = tradition_riders_of_the_mark }
+							culture = { has_cultural_tradition = tradition_a_people_reunited }
+						}
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:eorlingas_warriors
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_eotheod_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:eotheod_horse_archers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_eotheod_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:eotheod_light_horsemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_a_people_reunited }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:eotheod_vanguard
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_parameter = unlock_maa_hadorim_forest_wardens }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:hadorim_forest_wardens
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							culture = { has_cultural_tradition = tradition_riders_of_the_mark }
+							culture = { has_cultural_tradition = tradition_a_people_reunited }
+						}
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:riders_of_rohan
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_tradition = tradition_protectors_of_the_deep }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:westfolders
+					}
+				}
+				### vale_woodmen ###
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_valemen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:vale_nenedain_pikemen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_woodmen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:woodmen_huntsmen
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_innovation = innovation_woodmen_warfare }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:woodmen_widulingas
+					}
+				}
+				### wight ###
+				1 = {
+					trigger = {
+						culture = { has_cultural_pillar = heritage_undead }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:blighted_trappers
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_pillar = heritage_undead }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:giant_spiders
+					}
+				}
+				1 = {
+					trigger = {
+						culture = { has_cultural_pillar = heritage_undead }
+					}
+					save_scope_value_as = {
+						name = maa_to_create
+						value = flag:unburied_wights
+					}
+				}
 			### ORCS ###
 			###############
 			### Vanilla ###
@@ -2397,1059 +3345,1667 @@ ep3_create_random_maa_regiment_effect = {
 	$OWNER$ = {
 		switch = {
 			trigger = scope:maa_to_create
-			############
-			### LotR ###
-			############
-			#### Humans ####
-			### Hillmen ###
-			flag:hillmen_pikemen = {	
+			### cultural ###
+			flag:ambason_archers = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = hillmen_pikemen
+					TYPE = ambason_archers
 					SIZE = $SIZE$
 				}
 			}
-			#flag:hillmen_light_cavalry = {	Commented out due to the Cataphract Bug.
-			#	create_maa_or_upgrade_regiment_effect = {
-			#		TYPE = hillmen_light_cavalry
-			#		SIZE = $SIZE$
-			#	}
-			#}
-			flag:hillmen_heavy_infantry = {	
+			flag:ambason_royal_guard = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = hillmen_heavy_infantry
+					TYPE = ambason_royal_guard
 					SIZE = $SIZE$
 				}
 			}
-			flag:hillmen_skirmishers = {	
+			flag:ancient_charioteers = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = hillmen_skirmishers
+					TYPE = ancient_charioteers
 					SIZE = $SIZE$
 				}
 			}
-			flag:hillmen_heavy_infantry_unlock = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = hillmen_heavy_infantry_unlock
-					SIZE = $SIZE$
-				}
-			}
-			### Dunlending ###
-			flag:dunlending_huscarl = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunlending_huscarl
-					SIZE = $SIZE$
-				}
-			}
-			flag:dunlending_outriders = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunlending_outriders
-					SIZE = $SIZE$
-				}
-			}
-			flag:dunlending_axe_hunters = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunlending_axe_hunters
-					SIZE = $SIZE$
-				}
-			}
-			### Daen ### 
-			flag:clan_swordsmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = clan_swordsmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:dunlending_longbowmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunlending_longbowmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:clan_axemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = clan_axemen
-					SIZE = $SIZE$
-				}
-			}
-			### Lossoth ###
-			flag:lossoth_ski_hunters = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = lossoth_ski_hunters
-					SIZE = $SIZE$
-				}
-			}
-			### Angmarrin ###
-			flag:angmarim_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = angmarim_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:angmarim_archers = {	
+			flag:angmarim_archers = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = angmarim_archers
 					SIZE = $SIZE$
 				}
 			}
-			### Numenorean ###
-			flag:numenorean_soldiers = {	
+			flag:angmarim_pikemen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = numenorean_soldiers
+					TYPE = angmarim_pikemen
 					SIZE = $SIZE$
 				}
 			}
-			flag:numenorean_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = numenorean_archers
-					SIZE = $SIZE$
-				}
-			}
-			flag:numenorean_marines = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = numenorean_marines
-					SIZE = $SIZE$
-				}
-			}
-			flag:numenorean_elites = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = numenorean_elites
-					SIZE = $SIZE$
-				}
-			}
-			### Dunedain ###
-			flag:dunedain_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunedain_archers
-					SIZE = $SIZE$
-				}
-			}
-			flag:dunedain_knights = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunedain_knights
-					SIZE = $SIZE$
-				}
-			}
-			flag:dunedain_soldiers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunedain_soldiers
-					SIZE = $SIZE$
-				}
-			}
-			### Arnorian ###
-			flag:arnorian_soldiers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = arnorian_soldiers
-					SIZE = $SIZE$
-				}
-			}
-			flag:arnorian_bowmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = arnorian_bowmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:arnorian_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = arnorian_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			### Gondorian ###
-			flag:gondorian_footmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = gondorian_footmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:gondorian_bowmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = gondorian_bowmen
-					SIZE = $SIZE$
-				}
-			}
-			### Belfalathric ###
-			flag:belfalathric_bowmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = belfalathric_bowmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:swan_knights = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = swan_knights
-					SIZE = $SIZE$
-				}
-			}
-			### Orodbedhric ###
-			flag:gondorian_clansmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = gondorian_clansmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:orodbedhric_bowmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = orodbedhric_bowmen
-					SIZE = $SIZE$
-				}
-			}
-			### Caledhrim ###
-			flag:caledhrim_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = caledhrim_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			flag:caledhrim_footmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = caledhrim_footmen
-					SIZE = $SIZE$
-				}
-			}
-			### Umbaredain ###
-			flag:umbaredain_infantry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = umbaredain_infantry
-					SIZE = $SIZE$
-				}
-			}
-			flag:umbaredain_spearmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = umbaredain_spearmen
-					SIZE = $SIZE$
-				}
-			}
-			### Harondoric ###
-			flag:harondorim_rangers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = harondorim_rangers
-					SIZE = $SIZE$
-				}
-			}
-			### Dunedain Ranger ###
-			flag:dunedain_rangers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunedain_rangers
-					SIZE = $SIZE$
-				}
-			}
-			flag:dunedain_wardens = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunedain_wardens
-					SIZE = $SIZE$
-				}
-			}
-			flag:dunedain_outriders = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = dunedain_outriders
-					SIZE = $SIZE$
-				}
-			}
-			### Eotheod ###
-			flag:westfolders = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = westfolders
-					SIZE = $SIZE$
-				}
-			}	
-			flag:eotheod_light_horsemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = eotheod_light_horsemen
-					SIZE = $SIZE$
-				}
-			}	
-			flag:eotheod_horse_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = eotheod_horse_archers
-					SIZE = $SIZE$
-				}
-			}
-			flag:riders_of_rohan = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = riders_of_rohan
-					SIZE = $SIZE$
-				}
-			}		
-			flag:eotheod_vanguard = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = eotheod_vanguard
-					SIZE = $SIZE$
-				}
-			}			
-			### Haradrim ###
-			flag:haradrim_raiders = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = haradrim_raiders
-					SIZE = $SIZE$
-				}
-			}
-			flag:desert_javelineers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = desert_javelineers
-					SIZE = $SIZE$
-				}
-			}
-			flag:desert_spearmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = desert_spearmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:serpent_guard = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = serpent_guard
-					SIZE = $SIZE$
-				}
-			}
-			### Tedjin ###
-			flag:tedjin_khatajani = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = tedjin_khatajani
-					SIZE = $SIZE$
-				}
-			}
-			flag:tedjin_camel_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = tedjin_camel_archers
-					SIZE = $SIZE$
-				}
-			}
-			flag:soriyan_shortbows = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = soriyan_shortbows
-					SIZE = $SIZE$
-				}
-			}
-			### Ray ###
-			flag:bozishnarud_battlemasters = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = bozishnarud_battlemasters
-					SIZE = $SIZE$
-				}
-			}
-			flag:narudbriyig_hillriders = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = narudbriyig_hillriders
-					SIZE = $SIZE$
-				}
-			}
-			flag:gaian_stalkers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = gaian_stalkers
-					SIZE = $SIZE$
-				}
-			}
-			### Tulwang ###
-			flag:tulwangi_cliffwardens = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = tulwangi_cliffwardens
-					SIZE = $SIZE$
-				}
-			}
-			flag:tulwangi_junglewalkers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = tulwangi_junglewalkers
-					SIZE = $SIZE$
-				}
-			}
-			### An-Balkumagan ###
-			flag:abrazanim_legion = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = abrazanim_legion
-					SIZE = $SIZE$
-				}
-			}
-			flag:abrazanim_halberdiers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = abrazanim_halberdiers
-					SIZE = $SIZE$
-				}
-			}
-			flag:abrazanim_warbows = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = abrazanim_warbows
-					SIZE = $SIZE$
-				}
-			}
-			flag:zagar_an_adunai = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = zagar_an_adunai
-					SIZE = $SIZE$
-				}
-			}
-			flag:ephalzagar_an_adunai = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = ephalzagar_an_adunai
-					SIZE = $SIZE$
-				}
-			}
-			flag:knights_of_kharadune = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = knights_of_kharadune
-					SIZE = $SIZE$
-				}
-			}
-			flag:indentured_conscripts = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = indentured_conscripts
-					SIZE = $SIZE$
-				}
-			}
-			### Druedain ###
-			flag:druedain_temple_guard = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = druedain_temple_guard
-					SIZE = $SIZE$
-				}
-			}
-			flag:druedain_poison_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = druedain_poison_archers
-					SIZE = $SIZE$
-				}
-			}
-			flag:druedain_oku_tori = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = druedain_oku_tori
-					SIZE = $SIZE$
-				}
-			}
-			flag:druedain_beffraen_heavy_infantry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = druedain_beffraen_heavy_infantry
-					SIZE = $SIZE$
-				}
-			}
-			flag:druedain_beffraen_skirmishers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = druedain_beffraen_skirmishers
-					SIZE = $SIZE$
-				}
-			}
-			flag:druedain_beffraen_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = druedain_beffraen_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			### Ray ###
-			flag:vale_nenedain_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = vale_nenedain_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:woodmen_huntsmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = woodmen_huntsmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:woodmen_widulingas = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = woodmen_widulingas
-					SIZE = $SIZE$
-				}
-			}
-			### Ray ###
-			flag:easterling_kataphrakt = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = easterling_kataphrakt
-					SIZE = $SIZE$
-				}
-			}
-			flag:easterling_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = easterling_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:easterling_swordsmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = easterling_swordsmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:morgul_riders = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = morgul_riders
-					SIZE = $SIZE$
-				}
-			}
-			flag:mordorrim_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = mordorrim_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:mordorrim_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = mordorrim_archers
-					SIZE = $SIZE$
-				}
-			}
-			### Bellakari ###
-			flag:bellakarani_phalanx = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = bellakarani_phalanx
-					SIZE = $SIZE$
-				}
-			}
-			flag:bellakaze_outriders = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = bellakaze_outriders
-					SIZE = $SIZE$
-				}
-			}
-			flag:bellanarud_auxiliaries = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = bellanarud_auxiliaries
-					SIZE = $SIZE$
-				}
-			}
-			flag:bellakari_crossbowmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = bellakari_crossbowmen
-					SIZE = $SIZE$
-				}
-			}
-			### Eastern Adunai ###
-			flag:azul_an_zagar = {	
+			flag:azul_an_zagar = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = azul_an_zagar
 					SIZE = $SIZE$
 				}
 			}
-			flag:ephalnardu = {	
+			flag:ballistrai_khy = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = ephalnardu
+					TYPE = ballistrai_khy
 					SIZE = $SIZE$
 				}
 			}
-			### Sand Men ###
-			flag:hasharin = {	
+			flag:bellakarani_phalanx = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = hasharin
+					TYPE = bellakarani_phalanx
 					SIZE = $SIZE$
 				}
 			}
-			flag:desert_screamers = {	
+			flag:bellakari_crossbowmen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = desert_screamers
+					TYPE = bellakari_crossbowmen
 					SIZE = $SIZE$
 				}
 			}
-			### Mardrukan ###
-			flag:mardrukan_pikemen = {	
+			flag:bellakaze_outriders = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = mardrukan_pikemen
+					TYPE = bellakaze_outriders
 					SIZE = $SIZE$
 				}
 			}
-			flag:mardrukan_infantry = {	
+			flag:bellanarud_auxiliaries = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = mardrukan_infantry
+					TYPE = bellanarud_auxiliaries
 					SIZE = $SIZE$
 				}
 			}
-			### Corsairs ###
-			flag:corsair_warriors = {	
+			flag:blacksteel_phalanx = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = blacksteel_phalanx
+					SIZE = $SIZE$
+				}
+			}
+			flag:bozishnarud_battlemasters = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = bozishnarud_battlemasters
+					SIZE = $SIZE$
+				}
+			}
+			flag:bulgan_enforcers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = bulgan_enforcers
+					SIZE = $SIZE$
+				}
+			}
+			flag:bulgan_sikentr_honor_guard = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = bulgan_sikentr_honor_guard
+					SIZE = $SIZE$
+				}
+			}
+			flag:bulgan_stormriders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = bulgan_stormriders
+					SIZE = $SIZE$
+				}
+			}
+			flag:chennacatta_slingers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = chennacatta_slingers
+					SIZE = $SIZE$
+				}
+			}
+			flag:corsair_warriors = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = corsair_warriors
 					SIZE = $SIZE$
 				}
 			}
-			### Dale ###
-			flag:dale_bowmen = {	
+			flag:dale_bellwardens = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dale_bellwardens
+					SIZE = $SIZE$
+				}
+			}
+			flag:dale_bowmen = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = dale_bowmen
 					SIZE = $SIZE$
 				}
 			}
-			flag:dale_pikes = {	
+			flag:dale_pikes = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = dale_pikes
 					SIZE = $SIZE$
 				}
 			}
-			### Variags ###
-			flag:variag_horse_archers = {	
+			flag:desert_screamers = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = variag_horse_archers
+					TYPE = desert_screamers
 					SIZE = $SIZE$
 				}
 			}
-			flag:windriders_of_khand = {	
+			flag:donan_slingers = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = windriders_of_khand
+					TYPE = donan_slingers
 					SIZE = $SIZE$
 				}
 			}
-			flag:variag_pikemen = {	
+			flag:druedain_beffraen_heavy_infantry = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = variag_pikemen
+					TYPE = druedain_beffraen_heavy_infantry
 					SIZE = $SIZE$
 				}
 			}
-			flag:variag_axemen = {	
+			flag:druedain_beffraen_pikemen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = variag_axemen
+					TYPE = druedain_beffraen_pikemen
 					SIZE = $SIZE$
 				}
 			}
-			### Nurniags ###
-			flag:nurniag_horse_archers = {	
+			flag:druedain_beffraen_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = druedain_beffraen_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:druedain_oku_tori = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = druedain_oku_tori
+					SIZE = $SIZE$
+				}
+			}
+			flag:druedain_poison_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = druedain_poison_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:druedain_temple_guard = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = druedain_temple_guard
+					SIZE = $SIZE$
+				}
+			}
+			flag:easterling_kataphrakt = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = easterling_kataphrakt
+					SIZE = $SIZE$
+				}
+			}
+			flag:easterling_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = easterling_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:easterling_swordsmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = easterling_swordsmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:ephalnardu = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = ephalnardu
+					SIZE = $SIZE$
+				}
+			}
+			flag:gaian_stalkers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = gaian_stalkers
+					SIZE = $SIZE$
+				}
+			}
+			flag:gembedi = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = gembedi
+					SIZE = $SIZE$
+				}
+			}
+			flag:geshani_spears = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = geshani_spears
+					SIZE = $SIZE$
+				}
+			}
+			flag:giant_scorpions = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = giant_scorpions
+					SIZE = $SIZE$
+				}
+			}
+			flag:hasharin = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hasharin
+					SIZE = $SIZE$
+				}
+			}
+			flag:hathorim_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hathorim_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:hathorim_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hathorim_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:hill_stalkers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hill_stalkers
+					SIZE = $SIZE$
+				}
+			}
+			flag:hobbit_bounders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hobbit_bounders
+					SIZE = $SIZE$
+				}
+			}
+			flag:hobbit_first_bounders_troop = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hobbit_first_bounders_troop
+					SIZE = $SIZE$
+				}
+			}
+			flag:hobbit_hedgewardens = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hobbit_hedgewardens
+					SIZE = $SIZE$
+				}
+			}
+			flag:hobbit_hunters = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hobbit_hunters
+					SIZE = $SIZE$
+				}
+			}
+			flag:hobbit_muster = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hobbit_muster
+					SIZE = $SIZE$
+				}
+			}
+			flag:hobbit_pony_riders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hobbit_pony_riders
+					SIZE = $SIZE$
+				}
+			}
+			flag:impali_tribesmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = impali_tribesmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:ivory_behemoths = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = ivory_behemoths
+					SIZE = $SIZE$
+				}
+			}
+			flag:ivory_sentinels = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = ivory_sentinels
+					SIZE = $SIZE$
+				}
+			}
+			flag:koronandi_citizen_guard = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = koronandi_citizen_guard
+					SIZE = $SIZE$
+				}
+			}
+			flag:league_halberdiers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = league_halberdiers
+					SIZE = $SIZE$
+				}
+			}
+			flag:logath_horsearchers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = logath_horsearchers
+					SIZE = $SIZE$
+				}
+			}
+			flag:lossoth_ski_hunters = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = lossoth_ski_hunters
+					SIZE = $SIZE$
+				}
+			}
+			flag:mahud_headhunters = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mahud_headhunters
+					SIZE = $SIZE$
+				}
+			}
+			flag:mardrukan_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mardrukan_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:mardrukan_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mardrukan_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:marksmen_of_the_matron = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = marksmen_of_the_matron
+					SIZE = $SIZE$
+				}
+			}
+			flag:marshstriders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = marshstriders
+					SIZE = $SIZE$
+				}
+			}
+			flag:matriarchs_guard = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = matriarchs_guard
+					SIZE = $SIZE$
+				}
+			}
+			flag:merchant_heavy_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = merchant_heavy_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:mordorrim_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mordorrim_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:mordorrim_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mordorrim_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:morgul_riders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = morgul_riders
+					SIZE = $SIZE$
+				}
+			}
+			flag:mubadar_berserkers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mubadar_berserkers
+					SIZE = $SIZE$
+				}
+			}
+			flag:mumakani_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mumakani_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:mumakani_spears = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mumakani_spears
+					SIZE = $SIZE$
+				}
+			}
+			flag:nafarati_marauders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = nafarati_marauders
+					SIZE = $SIZE$
+				}
+			}
+			flag:narudbriyig_hillriders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = narudbriyig_hillriders
+					SIZE = $SIZE$
+				}
+			}
+			flag:nurniag_horse_archers = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = nurniag_horse_archers
 					SIZE = $SIZE$
 				}
 			}
-			flag:nurniag_slavedrivers = {	
+			flag:nurniag_slavedrivers = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = nurniag_slavedrivers
 					SIZE = $SIZE$
 				}
 			}
-			#### Dwarves ####
-			### Firebeards ###
-			flag:firebeard_skirmishers = {	
+			flag:nurnoth_regulars = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = firebeard_skirmishers
+					TYPE = nurnoth_regulars
 					SIZE = $SIZE$
 				}
 			}
-			flag:firebeard_archers = {	
+			flag:nurnoth_reserves = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = firebeard_archers
+					TYPE = nurnoth_reserves
 					SIZE = $SIZE$
 				}
 			}
-			flag:firebeard_pikemen = {	
+			flag:powan_hunters = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = firebeard_pikemen
+					TYPE = powan_hunters
 					SIZE = $SIZE$
 				}
 			}
-			flag:firebeard_heavy_infantry = {	
+			flag:quayside_crossbowmen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = firebeard_heavy_infantry
+					TYPE = quayside_crossbowmen
 					SIZE = $SIZE$
 				}
 			}
-			### Broadbeams ###
-			flag:broadbeam_skirmishers = {	
+			flag:rhovanion_freemen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = broadbeam_skirmishers
+					TYPE = rhovanion_freemen
 					SIZE = $SIZE$
 				}
 			}
-			flag:broadbeam_crossbowmen = {	
+			flag:rhovanion_heavy_cavalry = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = broadbeam_crossbowmen
+					TYPE = rhovanion_heavy_cavalry
 					SIZE = $SIZE$
 				}
 			}
-			flag:broadbeam_pikemen = {	
+			flag:rhovanion_light_cavalry = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = broadbeam_pikemen
+					TYPE = rhovanion_light_cavalry
 					SIZE = $SIZE$
 				}
 			}
-			flag:broadbeam_heavy_infantry = {	
+			flag:rhovanion_royal_guard = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = broadbeam_heavy_infantry
+					TYPE = rhovanion_royal_guard
 					SIZE = $SIZE$
 				}
 			}
-			### Blacklocks ###
-			flag:blacklock_skirmishers = {	
+			flag:royal_mumakil = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = blacklock_skirmishers
+					TYPE = royal_mumakil
 					SIZE = $SIZE$
 				}
 			}
-			flag:blacklock_crossbowmen = {	
+			flag:shayn_javelineers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = shayn_javelineers
+					SIZE = $SIZE$
+				}
+			}
+			flag:shayn_scouts = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = shayn_scouts
+					SIZE = $SIZE$
+				}
+			}
+			flag:shorewardens = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = shorewardens
+					SIZE = $SIZE$
+				}
+			}
+			flag:silent_stingers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = silent_stingers
+					SIZE = $SIZE$
+				}
+			}
+			flag:soriyan_shortbows = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = soriyan_shortbows
+					SIZE = $SIZE$
+				}
+			}
+			flag:tedjin_camel_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tedjin_camel_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:tedjin_khatajani = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tedjin_khatajani
+					SIZE = $SIZE$
+				}
+			}
+			flag:thorn_guard = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = thorn_guard
+					SIZE = $SIZE$
+				}
+			}
+			flag:thrall_master = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = thrall_master
+					SIZE = $SIZE$
+				}
+			}
+			flag:tiderunners = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tiderunners
+					SIZE = $SIZE$
+				}
+			}
+			flag:tirandaza = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tirandaza
+					SIZE = $SIZE$
+				}
+			}
+			flag:tizaspa = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tizaspa
+					SIZE = $SIZE$
+				}
+			}
+			flag:tizrava = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tizrava
+					SIZE = $SIZE$
+				}
+			}
+			flag:tizyarshti = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tizyarshti
+					SIZE = $SIZE$
+				}
+			}
+			flag:tulwangi_cliffwardens = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tulwangi_cliffwardens
+					SIZE = $SIZE$
+				}
+			}
+			flag:tulwangi_junglewalkers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tulwangi_junglewalkers
+					SIZE = $SIZE$
+				}
+			}
+			flag:tyari_tollkeepers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = tyari_tollkeepers
+					SIZE = $SIZE$
+				}
+			}
+			flag:usakani_ambushers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = usakani_ambushers
+					SIZE = $SIZE$
+				}
+			}
+			flag:variag_axemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = variag_axemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:variag_horse_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = variag_horse_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:variag_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = variag_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:vineyard_bowmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = vineyard_bowmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:vintner_court_knights = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = vintner_court_knights
+					SIZE = $SIZE$
+				}
+			}
+			flag:vulmaw_venturers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = vulmaw_venturers
+					SIZE = $SIZE$
+				}
+			}
+			flag:waw_pirates = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = waw_pirates
+					SIZE = $SIZE$
+				}
+			}
+			flag:windriders_of_khand = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = windriders_of_khand
+					SIZE = $SIZE$
+				}
+			}
+			flag:zeba_outriders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = zeba_outriders
+					SIZE = $SIZE$
+				}
+			}
+			flag:zebaback_slavers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = zebaback_slavers
+					SIZE = $SIZE$
+				}
+			}
+			### dunedain ###
+			flag:arnorian_bowmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = arnorian_bowmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:arnorian_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = arnorian_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:arnorian_soldiers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = arnorian_soldiers
+					SIZE = $SIZE$
+				}
+			}
+			flag:belfalathric_bowmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = belfalathric_bowmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:caledhrim_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = caledhrim_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:caledhrim_footmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = caledhrim_footmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunedain_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunedain_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunedain_elites = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunedain_elites
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunedain_knights = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunedain_knights
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunedain_outriders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunedain_outriders
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunedain_rangers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunedain_rangers
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunedain_soldiers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunedain_soldiers
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunedain_wardens = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunedain_wardens
+					SIZE = $SIZE$
+				}
+			}
+			flag:gondorian_bowmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = gondorian_bowmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:gondorian_clansmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = gondorian_clansmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:gondorian_footmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = gondorian_footmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:gondorian_marines = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = gondorian_marines
+					SIZE = $SIZE$
+				}
+			}
+			flag:guard_of_the_citadel = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = guard_of_the_citadel
+					SIZE = $SIZE$
+				}
+			}
+			flag:harondorim_palace_guards = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = harondorim_palace_guards
+					SIZE = $SIZE$
+				}
+			}
+			flag:harondorim_rangers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = harondorim_rangers
+					SIZE = $SIZE$
+				}
+			}
+			flag:nimrodel_rangers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = nimrodel_rangers
+					SIZE = $SIZE$
+				}
+			}
+			flag:numenorean_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = numenorean_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:numenorean_elites = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = numenorean_elites
+					SIZE = $SIZE$
+				}
+			}
+			flag:numenorean_marines = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = numenorean_marines
+					SIZE = $SIZE$
+				}
+			}
+			flag:numenorean_soldiers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = numenorean_soldiers
+					SIZE = $SIZE$
+				}
+			}
+			flag:orodbedhric_bowmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = orodbedhric_bowmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:swan_knights = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = swan_knights
+					SIZE = $SIZE$
+				}
+			}
+			flag:talon_knights = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = talon_knights
+					SIZE = $SIZE$
+				}
+			}
+			flag:umbaredain_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = umbaredain_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:umbaredain_spearmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = umbaredain_spearmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:wardens_of_annuminas = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = wardens_of_annuminas
+					SIZE = $SIZE$
+				}
+			}
+			flag:wardens_tirith_aear = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = wardens_tirith_aear
+					SIZE = $SIZE$
+				}
+			}
+			### dunlending ###
+			flag:clan_axemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = clan_axemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:clan_swordsmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = clan_swordsmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunlending_axe_hunters = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunlending_axe_hunters
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunlending_huscarl = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunlending_huscarl
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunlending_longbowmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunlending_longbowmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:dunlending_outriders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dunlending_outriders
+					SIZE = $SIZE$
+				}
+			}
+			flag:hillmen_heavy_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hillmen_heavy_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:hillmen_heavy_infantry_unlock = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hillmen_heavy_infantry_unlock
+					SIZE = $SIZE$
+				}
+			}
+			flag:hillmen_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hillmen_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:hillmen_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hillmen_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			### dwarven ###
+			flag:blacklock_crossbowmen = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = blacklock_crossbowmen
 					SIZE = $SIZE$
 				}
 			}
-			flag:blacklock_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = blacklock_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:blacklock_heavy_infantry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = blacklock_heavy_infantry
-					SIZE = $SIZE$
-				}
-			}
-			flag:blacklock_engineers = {	
+			flag:blacklock_engineers = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = blacklock_engineers
 					SIZE = $SIZE$
 				}
 			}
-			### Stiffbeards ###
-			flag:stiffbeard_skirmishers = {	
+			flag:blacklock_heavy_infantry = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = stiffbeard_skirmishers
+					TYPE = blacklock_heavy_infantry
 					SIZE = $SIZE$
 				}
 			}
-			flag:stiffbeard_crossbowmen = {	
+			flag:blacklock_pikemen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = stiffbeard_crossbowmen
+					TYPE = blacklock_pikemen
 					SIZE = $SIZE$
 				}
 			}
-			flag:stiffbeard_pikemen = {	
+			flag:blacklock_skirmishers = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = stiffbeard_pikemen
+					TYPE = blacklock_skirmishers
 					SIZE = $SIZE$
 				}
 			}
-			flag:stiffbeard_heavy_infantry = {	
+			flag:broadbeam_crossbowmen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = stiffbeard_heavy_infantry
+					TYPE = broadbeam_crossbowmen
 					SIZE = $SIZE$
 				}
 			}
-			### Longbeards ###
-			flag:longbeard_skirmishers = {	
+			flag:broadbeam_heavy_infantry = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = longbeard_skirmishers
+					TYPE = broadbeam_heavy_infantry
 					SIZE = $SIZE$
 				}
 			}
-			flag:longbeard_crossbowmen = {	
+			flag:broadbeam_pikemen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = longbeard_crossbowmen
+					TYPE = broadbeam_pikemen
 					SIZE = $SIZE$
 				}
 			}
-			flag:longbeard_pikemen = {	
+			flag:broadbeam_skirmishers = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = longbeard_pikemen
+					TYPE = broadbeam_skirmishers
 					SIZE = $SIZE$
 				}
 			}
-			flag:longbeard_heavy_infantry = {	
+			flag:firebeard_archers = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = longbeard_heavy_infantry
+					TYPE = firebeard_archers
 					SIZE = $SIZE$
 				}
 			}
-			flag:longbeard_horse_archers = {	
+			flag:firebeard_heavy_infantry = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = longbeard_horse_archers
+					TYPE = firebeard_heavy_infantry
 					SIZE = $SIZE$
 				}
 			}
-			### Ironfists ###
-			flag:ironfist_skirmishers = {	
+			flag:firebeard_pikemen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = ironfist_skirmishers
+					TYPE = firebeard_pikemen
 					SIZE = $SIZE$
 				}
 			}
-			flag:ironfist_crossbowmen = {	
+			flag:firebeard_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = firebeard_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:ironfist_crossbowmen = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = ironfist_crossbowmen
 					SIZE = $SIZE$
 				}
 			}
-			flag:ironfist_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = ironfist_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:ironfist_heavy_infantry = {	
+			flag:ironfist_heavy_infantry = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = ironfist_heavy_infantry
 					SIZE = $SIZE$
 				}
 			}
-			### Stonefoots ###
-			flag:stonefoot_skirmishers = {	
+			flag:ironfist_pikemen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = stonefoot_skirmishers
+					TYPE = ironfist_pikemen
 					SIZE = $SIZE$
 				}
 			}
-			flag:stonefoot_crossbowmen = {	
+			flag:ironfist_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = ironfist_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:longbeard_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = longbeard_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:longbeard_crossbowmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = longbeard_crossbowmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:longbeard_heavy_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = longbeard_heavy_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:longbeard_horse_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = longbeard_horse_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:longbeard_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = longbeard_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:longbeard_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = longbeard_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:stiffbeard_crossbowmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = stiffbeard_crossbowmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:stiffbeard_heavy_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = stiffbeard_heavy_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:stiffbeard_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = stiffbeard_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:stiffbeard_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = stiffbeard_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:stonefoot_crossbowmen = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = stonefoot_crossbowmen
 					SIZE = $SIZE$
 				}
 			}
-			flag:stonefoot_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = stonefoot_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:stonefoot_heavy_infantry = {	
+			flag:stonefoot_heavy_infantry = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = stonefoot_heavy_infantry
 					SIZE = $SIZE$
 				}
 			}
-			#### Elves ####
-			### Calaquendi ###
-			flag:high_elven_heavy_infantry = {	
+			flag:stonefoot_pikemen = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = high_elven_heavy_infantry
+					TYPE = stonefoot_pikemen
 					SIZE = $SIZE$
 				}
 			}
-			flag:high_elven_archers = {	
+			flag:stonefoot_skirmishers = {
 				create_maa_or_upgrade_regiment_effect = {
-					TYPE = high_elven_archers
+					TYPE = stonefoot_skirmishers
 					SIZE = $SIZE$
 				}
 			}
-			flag:high_elven_heavy_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = high_elven_heavy_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			flag:high_elven_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = high_elven_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:high_elven_skirmishers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = high_elven_skirmishers
-					SIZE = $SIZE$
-				}
-			}
-			flag:high_elven_light_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = high_elven_light_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			### Lomiquendi ###
-			flag:grey_elven_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = grey_elven_archers
-					SIZE = $SIZE$
-				}
-			}
-			flag:grey_elven_heavy_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = grey_elven_heavy_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			flag:grey_elven_heavy_infantry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = grey_elven_heavy_infantry
-					SIZE = $SIZE$
-				}
-			}
-			flag:grey_elven_skirmishers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = grey_elven_skirmishers
-					SIZE = $SIZE$
-				}
-			}
-			flag:grey_elven_light_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = grey_elven_light_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			### Avarin ###
-			flag:avarin_skirmishers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = avarin_skirmishers
-					SIZE = $SIZE$
-				}
-			}
-			flag:avarin_light_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = avarin_light_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			flag:avarin_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = avarin_archers
-					SIZE = $SIZE$
-				}
-			}
-			flag:avarin_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = avarin_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:avarin_heavy_infantry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = avarin_heavy_infantry
-					SIZE = $SIZE$
-				}
-			}
-			flag:avarin_heavy_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = avarin_heavy_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			### Noldor ###
-			flag:noldor_swordsmen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = noldor_swordsmen
-					SIZE = $SIZE$
-				}
-			}
-			flag:noldor_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = noldor_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			flag:song_smiths = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = song_smiths
-					SIZE = $SIZE$
-				}
-			}
-			### Vanyar ###
-			flag:vanyar_pikemen = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = vanyar_pikemen
-					SIZE = $SIZE$
-				}
-			}
-			flag:vanyar_cavalry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = vanyar_cavalry
-					SIZE = $SIZE$
-				}
-			}
-			### Teleri ###
-			flag:teleri_light_infantry = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = teleri_light_infantry
-					SIZE = $SIZE$
-				}
-			}
-			flag:teleri_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = teleri_archers
-					SIZE = $SIZE$
-				}
-			}
-			flag:hir_hathol = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = hir_hathol
-					SIZE = $SIZE$
-				}
-			}
-			flag:falathrim_haven_guard = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = falathrim_haven_guard
-					SIZE = $SIZE$
-				}
-			}
-			flag:marchwardens = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = marchwardens
-					SIZE = $SIZE$
-				}
-			}
-			flag:galadhrim_warriors = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = galadhrim_warriors
-					SIZE = $SIZE$
-				}
-			}
-			flag:galadhrim_archers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = galadhrim_archers
-					SIZE = $SIZE$
-				}
-			}
-			flag:royal_elk_riders = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = royal_elk_riders
-					SIZE = $SIZE$
-				}
-			}
-			flag:theladagnyr = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = theladagnyr
-					SIZE = $SIZE$
-				}
-			}
-			flag:neldoreth_borderwardens = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = neldoreth_borderwardens
-					SIZE = $SIZE$
-				}
-			}
-			flag:nuinevari = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = nuinevari
-					SIZE = $SIZE$
-				}
-			}
-			flag:cuind_wanderers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = cuind_wanderers
-					SIZE = $SIZE$
-				}
-			}
-			flag:cuind_skirmishers = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = cuind_skirmishers
-					SIZE = $SIZE$
-				}
-			}
-			flag:annammon_kin = {	
+			### elven ###
+			flag:annammon_kin = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = annammon_kin
 					SIZE = $SIZE$
 				}
 			}
-			flag:kinnlai_skirmishers = {	
+			flag:avarin_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = avarin_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:avarin_heavy_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = avarin_heavy_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:avarin_heavy_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = avarin_heavy_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:avarin_light_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = avarin_light_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:avarin_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = avarin_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:avarin_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = avarin_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:cuind_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = cuind_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:cuind_wanderers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = cuind_wanderers
+					SIZE = $SIZE$
+				}
+			}
+			flag:falathrim_haven_guard = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = falathrim_haven_guard
+					SIZE = $SIZE$
+				}
+			}
+			flag:galadhrim_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = galadhrim_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:galadhrim_warriors = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = galadhrim_warriors
+					SIZE = $SIZE$
+				}
+			}
+			flag:gilded_guard = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = gilded_guard
+					SIZE = $SIZE$
+				}
+			}
+			flag:greenwood_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = greenwood_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:grey_elven_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = grey_elven_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:grey_elven_heavy_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = grey_elven_heavy_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:grey_elven_heavy_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = grey_elven_heavy_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:grey_elven_light_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = grey_elven_light_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:grey_elven_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = grey_elven_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:grey_elven_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = grey_elven_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:high_elven_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = high_elven_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:high_elven_heavy_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = high_elven_heavy_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:high_elven_heavy_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = high_elven_heavy_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:high_elven_light_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = high_elven_light_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:high_elven_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = high_elven_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:high_elven_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = high_elven_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:hir_hathol = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hir_hathol
+					SIZE = $SIZE$
+				}
+			}
+			flag:kinnlai_skirmishers = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = kinnlai_skirmishers
 					SIZE = $SIZE$
 				}
 			}
-			flag:sirrandrai_riders = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = sirrandrai_riders
-					SIZE = $SIZE$
-				}
-			}
-			flag:wardens_of_sirgala = {	
-				create_maa_or_upgrade_regiment_effect = {
-					TYPE = wardens_of_sirgala
-					SIZE = $SIZE$
-				}
-			}
-			flag:laiquendi_scouts = {	
+			flag:laiquendi_scouts = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = laiquendi_scouts
 					SIZE = $SIZE$
 				}
 			}
-			flag:ossiriand_rangers = {	
+			flag:marchwardens = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = marchwardens
+					SIZE = $SIZE$
+				}
+			}
+			flag:neldoreth_borderwardens = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = neldoreth_borderwardens
+					SIZE = $SIZE$
+				}
+			}
+			flag:noldor_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = noldor_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:noldor_swordsmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = noldor_swordsmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:nuinevari = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = nuinevari
+					SIZE = $SIZE$
+				}
+			}
+			flag:ossiriand_rangers = {
 				create_maa_or_upgrade_regiment_effect = {
 					TYPE = ossiriand_rangers
 					SIZE = $SIZE$
 				}
 			}
-        }
+			flag:royal_elk_riders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = royal_elk_riders
+					SIZE = $SIZE$
+				}
+			}
+			flag:sirrandrai_riders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = sirrandrai_riders
+					SIZE = $SIZE$
+				}
+			}
+			flag:song_smiths = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = song_smiths
+					SIZE = $SIZE$
+				}
+			}
+			flag:teleri_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = teleri_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:teleri_light_infantry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = teleri_light_infantry
+					SIZE = $SIZE$
+				}
+			}
+			flag:theladagnyr = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = theladagnyr
+					SIZE = $SIZE$
+				}
+			}
+			flag:vanyar_cavalry = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = vanyar_cavalry
+					SIZE = $SIZE$
+				}
+			}
+			flag:vanyar_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = vanyar_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:wardens_of_sirgala = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = wardens_of_sirgala
+					SIZE = $SIZE$
+				}
+			}
+			### haradrim ###
+			flag:desert_javelineers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = desert_javelineers
+					SIZE = $SIZE$
+				}
+			}
+			flag:desert_spearmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = desert_spearmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:guard_of_abrakhan = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = guard_of_abrakhan
+					SIZE = $SIZE$
+				}
+			}
+			flag:haradrim_raiders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = haradrim_raiders
+					SIZE = $SIZE$
+				}
+			}
+			flag:serpent_guard = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = serpent_guard
+					SIZE = $SIZE$
+				}
+			}
+			### north_and_south_adunaic ###
+			flag:abrazanim_halberdiers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = abrazanim_halberdiers
+					SIZE = $SIZE$
+				}
+			}
+			flag:abrazanim_legion = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = abrazanim_legion
+					SIZE = $SIZE$
+				}
+			}
+			flag:abrazanim_warbows = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = abrazanim_warbows
+					SIZE = $SIZE$
+				}
+			}
+			flag:ephalzagar_an_adunai = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = ephalzagar_an_adunai
+					SIZE = $SIZE$
+				}
+			}
+			flag:indentured_conscripts = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = indentured_conscripts
+					SIZE = $SIZE$
+				}
+			}
+			flag:knights_of_kharadune = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = knights_of_kharadune
+					SIZE = $SIZE$
+				}
+			}
+			flag:zagar_an_adunai = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = zagar_an_adunai
+					SIZE = $SIZE$
+				}
+			}
+			### orc ###
+			flag:caragor_pack = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = caragor_pack
+					SIZE = $SIZE$
+				}
+			}
+			flag:deeproad_lurkers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = deeproad_lurkers
+					SIZE = $SIZE$
+				}
+			}
+			flag:dragon_orc_berserkers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = dragon_orc_berserkers
+					SIZE = $SIZE$
+				}
+			}
+			flag:goblin_poison_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = goblin_poison_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:goblin_skirmishers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = goblin_skirmishers
+					SIZE = $SIZE$
+				}
+			}
+			flag:goblin_spear_throwers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = goblin_spear_throwers
+					SIZE = $SIZE$
+				}
+			}
+			flag:goblin_underminers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = goblin_underminers
+					SIZE = $SIZE$
+				}
+			}
+			flag:goblin_warg_riders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = goblin_warg_riders
+					SIZE = $SIZE$
+				}
+			}
+			flag:great_beasts = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = great_beasts
+					SIZE = $SIZE$
+				}
+			}
+			flag:hunter_orcs_on_fell_wargs = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hunter_orcs_on_fell_wargs
+					SIZE = $SIZE$
+				}
+			}
+			flag:moria_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = moria_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:mountain_troll = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mountain_troll
+					SIZE = $SIZE$
+				}
+			}
+			flag:mountainorc_warriors = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = mountainorc_warriors
+					SIZE = $SIZE$
+				}
+			}
+			flag:net_raiders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = net_raiders
+					SIZE = $SIZE$
+				}
+			}
+			flag:obsidian_warriors = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = obsidian_warriors
+					SIZE = $SIZE$
+				}
+			}
+			flag:olog_hai = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = olog_hai
+					SIZE = $SIZE$
+				}
+			}
+			flag:orc_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = orc_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:orc_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = orc_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:orc_rabble = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = orc_rabble
+					SIZE = $SIZE$
+				}
+			}
+			flag:orc_siege_tower = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = orc_siege_tower
+					SIZE = $SIZE$
+				}
+			}
+			flag:orc_trackers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = orc_trackers
+					SIZE = $SIZE$
+				}
+			}
+			flag:orc_warriors = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = orc_warriors
+					SIZE = $SIZE$
+				}
+			}
+			flag:rukhashai_raiders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = rukhashai_raiders
+					SIZE = $SIZE$
+				}
+			}
+			flag:wargrider_scouts = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = wargrider_scouts
+					SIZE = $SIZE$
+				}
+			}
+			flag:wood_trolls = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = wood_trolls
+					SIZE = $SIZE$
+				}
+			}
+			### rohirrim ###
+			flag:eorlingas_warriors = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = eorlingas_warriors
+					SIZE = $SIZE$
+				}
+			}
+			flag:eotheod_horse_archers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = eotheod_horse_archers
+					SIZE = $SIZE$
+				}
+			}
+			flag:eotheod_light_horsemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = eotheod_light_horsemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:eotheod_vanguard = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = eotheod_vanguard
+					SIZE = $SIZE$
+				}
+			}
+			flag:hadorim_forest_wardens = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = hadorim_forest_wardens
+					SIZE = $SIZE$
+				}
+			}
+			flag:riders_of_rohan = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = riders_of_rohan
+					SIZE = $SIZE$
+				}
+			}
+			flag:westfolders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = westfolders
+					SIZE = $SIZE$
+				}
+			}
+			### vale_woodmen ###
+			flag:vale_nenedain_pikemen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = vale_nenedain_pikemen
+					SIZE = $SIZE$
+				}
+			}
+			flag:woodmen_huntsmen = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = woodmen_huntsmen
+					SIZE = $SIZE$
+				}
+			}
+			flag:woodmen_widulingas = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = woodmen_widulingas
+					SIZE = $SIZE$
+				}
+			}
+			### wight ###
+			flag:blighted_trappers = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = blighted_trappers
+					SIZE = $SIZE$
+				}
+			}
+			flag:giant_spiders = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = giant_spiders
+					SIZE = $SIZE$
+				}
+			}
+			flag:unburied_wights = {
+				create_maa_or_upgrade_regiment_effect = {
+					TYPE = unburied_wights
+					SIZE = $SIZE$
+				}
+			}
+		}
     }
 }
